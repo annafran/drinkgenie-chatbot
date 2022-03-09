@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Chatbot</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="chatbot-interface">
+      <div class="bot-face">
+        <img class="robot-img" src="images/robot.jpg" alt="A robot" />
+      </div>
+
+      <div class="chat-container">
+        <form id="chat-form" class="chat-form">
+          <input
+            id="chat-input"
+            class="chat-input"
+            type="text"
+            placeholder="Talk to the bot ..."
+            autocomplete="off"
+          />
+          <button class="btn-chat-send" type="submit">Send</button>
+        </form>
+      </div>
+
+      <div class="chatbox-container">
+        <div id="chatbox" class="chatbox">
+          <div class="chat-item chat-item-bot">
+            Hi, human ... what's your name?
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="lib/index.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+{
+  "name": "wdd01-challenge-template",
+  "version": "0.0.1",
+  "description": "Challenge Template.",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Developers-Institute/WDD01-Challenge-Template.git"
+  },
+  "author": "Developers Institute",
+  "license": "MIT",
+  "scripts": {
+    "start": "serve Submission",
+    "test": "jest --verbose",
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:js": "eslint ./Submission",
+    "lint:css": "stylelint **/*.css",
+    "prettier:check": "prettier --check '**/*{.css,.html,.js}'",
+    "validate:html": "html-validate 'Submission/**/*.html'"
+  },
+  "bugs": {
+    "url": "https://github.com/Developers-Institute/WDD01-Challenge-Template/issues"
+  },
+  "homepage": "https://github.com/Developers-Institute/WDD01-Challenge-Template#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "babel-jest": "^27.0.6",
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "html-validate": "^5.1.1",
+    "jest": "^27.0.6",
+    "prettier": "^2.3.2",
+    "serve": "^12.0.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-recommended": "^5.0.0"
+  }
+}
