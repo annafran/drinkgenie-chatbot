@@ -69,10 +69,12 @@ The chatbot will also respond to two instructions from the customer at any stage
 **Test 4**
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
-* Input: "Anna"
-* Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Input: "Bob"
+* Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
 * Input: "Please restart the order"
 * Output: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+* * Input: "Anna"
+* Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
 
 **Test 5**
 
