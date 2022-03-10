@@ -5,8 +5,16 @@
  *
  */
 
+const myLevel = 1;
+const path = 0;
+
 const getBotReply = (msg) => {
-  return "Error unknown...";
+    if (myLevel === 1 && path === 0) {
+        const userName = msg;
+        return `Hi ${userName}! Do you feel like something alcoholic?`;
+    }
+
+    return "Error unknown...";
 };
 
 export { getBotReply };

@@ -27,7 +27,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 
 --------------
 
-![flowchart](virtual-barman-flowchart.jpg)
+![flowchart](barbot-flowchart.jpg)
 
 -----------------
 ## Test scenarios
@@ -36,7 +36,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 
 * Start: "It's time for a drink! What's your name?"
 * Input: ````${name}````
-* Output: "Do you feel like something alcoholic?"
+* Output: "Hi ````${name}````! Do you feel like something alcoholic?"
 * Input: "yes"
 * Output: "Oh you are feeling ready to party ````${name}````! Do you like the feeling of bubbles in your mouth?"
 * Input: "yes"
@@ -50,7 +50,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 
 * Start: "It's time for a drink! What's your name?"
 * Input: ````${name}````
-* Output: "Do you feel like something alcoholic?"
+* Output: "Hi ````${name}````! Do you feel like something alcoholic?"
 * Input: "no"
 * Output: "Aren't you boring! Not in the mood to party ````${name}````? Are you feeling cold?"
 * Input: "yes"
