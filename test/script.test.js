@@ -55,4 +55,27 @@ describe("getBotReply", () => {
         expect(botReply4).toEqual(expectedReply4);
         expect(botReply5).toEqual(expectedReply5);
     });
+
+    it("should restart the chatbot and have correct greeting for a different user name", () => {
+        // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+        // * Input: Bob
+        const botReply1 = getBotReply("Bob");
+        // * Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+        const expectedReply1 =
+            "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today.";
+        // * Input: "restart"
+        const botReply2 = getBotReply("restart");
+        // * Output: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+        const expectedReply2 =
+            "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?";
+        // * Input: "yes"
+        const botReply3 = getBotReply("Anna");
+        // * Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today.";
+        const expectedReply3 =
+            "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today.";
+
+        expect(botReply1).toEqual(expectedReply1);
+        expect(botReply2).toEqual(expectedReply2);
+        expect(botReply3).toEqual(expectedReply3);
+    });
 });
