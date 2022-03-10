@@ -12,6 +12,9 @@ The chatbot will also respond to two instructions from the customer at any stage
 
 ## Inputs, processes and outputs
 
+* **Inputs:** ```msg```
+* **Processes:** determine the correct answer based on the msg, and previous inputs
+* **Output:** the next question, or answer to the question
 
 ![flowchart](bar-chatbot-flowchart.jpg)
 
