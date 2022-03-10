@@ -2,16 +2,18 @@
 
 ## Problem statement
 
-Create a chatbot that helps the user decide which drink to order at a restaurant. Use the provided decision tree to build the chatbot.
+Create a chatbot that helps the customer decide which drink to order. Use the provided flowchart to build the chatbot.
 
-The chatbot program needs to ask the user their name at the beginning, so that the responses will be personalised. The chatbot will ask the user about a specific preference related to drinking, and the user will answer one of two options. The user's answer will trigger the chatbot program to ask another question, based on the user's previous answer. The user will continue to answer the questions, responding with a string. The chatbot will finally provide the user with the drink type that they should order. 
+The chatbot, or virtual barman, will start by asking the user their name, which will enable the chatbot to personalise the rest of the responses. The virtual barman will ask the user about a specific preference related to drinking or their current feelings, and the user will answer one of two options. The user's answer will trigger the chatbot to ask another question, based on the previous answer. The user will continue to provide responses to each question until the chatbot eventually provides the customer with a drink that best suits them. 
 
 The chatbot will recognise if the user doesn't enter one of the required answers at each stage, letting them know that they need to try and enter their answer correctly again. 
+
+The chatbot will also respond to two instructions from the customer at any stage during the conversation. The first instruction will be to provide the customer with a random drink choice.  The second instruction will be to reset the chatbot to the start. 
 
 ## Inputs, processes and outputs
 
 
-![flowchart](drinks-chatbot-flowchart.jpg)
+![flowchart](bar-chatbot-flowchart.jpg)
 
 
 ## Test scenarios
