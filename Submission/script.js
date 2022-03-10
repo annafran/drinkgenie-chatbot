@@ -50,6 +50,8 @@ const getBotReply = (msg) => {
     if (rememberedName && msg === "restart" && myLevel > 1) {
         myLevel = 1;
         path = 0;
+        rememberedName = false;
+        userName = "";
         return "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?";
     }
 
