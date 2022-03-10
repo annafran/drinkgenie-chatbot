@@ -1,15 +1,15 @@
-# "Join me for a drink" chatbot
+# "Bar Genie" chatbot
 
 ## Problem statement
 
 
 Create a chatbot that helps the customer decide which drink to order. Use the provided flowchart to build the chatbot.
 
-The chatbot, or virtual barman, will start by asking the user their name, which will enable the chatbot to personalise the rest of the responses. The virtual barman will ask the user about a specific preference related to drinking or their current feelings, and the user will answer one of two options. The user's answer will trigger the chatbot to ask another question, based on the previous answer. The user will continue to provide responses to each question until the chatbot eventually provides the customer with a drink that best suits them. 
+The chatbot, or Bar Genie, will start by asking the user their name, which will enable the Bar Genie to personalise the rest of the responses. The Bar Genie will ask the user about a specific preference related to drinking or their current feelings, and the user will answer one of two options. The user's answer will trigger the Bar Genie to ask another question, based on the previous answer. The user will continue to provide responses to each question until the chatbot eventually provides the customer with a drink that best suits them. 
 
-The chatbot will recognise if the user doesn't enter one of the required answers at each stage, letting them know that they need to try and enter their answer correctly again. 
+The Bar Genie will recognise if the user doesn't enter one of the required answers at each stage, letting them know that they need to try and enter their answer correctly again. 
 
-The chatbot will also respond to two instructions from the customer at any stage during the conversation. The first instruction will be to provide the customer with a random drink choice.  The second instruction will be to reset the chatbot to the start. 
+The chatbot will also respond to two instructions from the customer at any stage during the conversation. The first instruction will be to provide the customer with a random drink choice.  The second instruction will be to restart the chatbot to the start. 
 
 ## Inputs, processes and outputs
 
@@ -21,54 +21,63 @@ The chatbot will also respond to two instructions from the customer at any stage
   * process an instruction to output a random answer
 * **Output:** 
   * the next question, or answer to the question
-  * reset the chatbot
+  * restart the chatbot
   * a random drink option
   * an answer that tells the user to re-enter their ```msg``` correctly
 
 --------------
 
-![flowchart](barbot-flowchart.jpg)
+![flowchart](bargenie-flowchart.jpg)
 
 -----------------
 ## Test scenarios
 
 **Test 1**
 
-* Start: "It's time for a drink! What's your name?"
-* Input: ````${name}````
-* Output: "Hi ````${name}````! Do you feel like something alcoholic?"
+* Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+* Input: Bob
+* Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
 * Input: "yes"
-* Output: "Oh you are feeling ready to party ````${name}````! Do you like the feeling of bubbles in your mouth?"
+* Output: "Oh you are ready to party Bob! You are my type of person. Do you like the feeling of bubbles in your mouth?"
 * Input: "yes"
 * Output: "You want a party in your mouth huh! Are you feeling sweet or bitter today?"
 * Input: "bitter"
 * Output: "I agree, bitter is better. Let me pour you a beer. Dark or light?"
 * Input: "dark"
-* Output: "Time for a Guinness.  This is a full meal in a glass! Be careful it will go straight to your head."
+* Output: "Time for a Guinness.  This is a full meal in a glass! Be careful it will go straight to your head. Enjoy your drink and if you want another one, just type restart."
   
 **Test 2**  
 
-* Start: "It's time for a drink! What's your name?"
-* Input: ````${name}````
-* Output: "Hi ````${name}````! Do you feel like something alcoholic?"
+* Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+* Input: "Anna"
+* Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
 * Input: "no"
-* Output: "Aren't you boring! Not in the mood to party ````${name}````? Are you feeling cold?"
+* Output: "Aren't you boring! Not in the mood to party Anna? Are you feeling cold?"
 * Input: "yes"
 * Output: "Cold and not in the mood to party.  Sounds like a dire situation.  Are you low on energy?"
 * Input: "no"
-* Output: "So your batteries are already charged today ````${name}````.  In that case let's get you a rooibus tea."
+* Output: "So your batteries are already charged today Anna.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type restart"
 
 **Test 3**
 
-* Input: "hello bot"
+* Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+* Input: "Thirsty gal"
+* Output: "Hola Thirsty gal, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Input: "really?"
 * Output: "Ohoh that answer didn't make sense to me. I think you have already had too much to drink! Make sure you answer with one of the valid options"
 
 **Test 4**
 
-* Input: "Please reset the order"
-* Output: "It's time for a drink! What's your name?"
+* Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+* Input: "Anna"
+* Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Input: "Please restart the order"
+* Output: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 
 **Test 5**
 
+* Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+* Input: "Anna"
+* Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
 * Input: "Please select a random drink for me"
-* Output: "Bloody Mary"
+* Output: "Bloody Bob"
