@@ -31,22 +31,41 @@ const getBotReply = (msg) => {
     return `Here's a ${randomDrink}. If you want to order again, just type restart or random.`;
   }
 
-  if (rememberedName && msg === "yes" && myLevel === 2) {
-    myLevel = 3;
-    path = "yes";
-    return `Oh you are ready to party ${userName}! You are my type of person. Do you like the feeling of bubbles in your mouth?`;
+  if (myLevel === 2 && rememberedName) {
+    if (msg === "no") {
+      myLevel = 3;
+      path = "no";
+      return `Aren't you boring! Not in the mood to party ${userName}? Are you feeling cold?`;
+    }
+    if (msg === "yes") {
+      myLevel = 3;
+      path = "yes";
+      return `Oh you are ready to party ${userName}! You are my type of person. Do you like the feeling of bubbles in your mouth?`;
+    }
   }
-
-  if (rememberedName && msg === "yes" && path === "yes" && myLevel === 3) {
-    myLevel = 4;
-    path = "yes";
-    return "You want a party in your mouth huh! Are you feeling sweet or bitter today?";
+  if (myLevel === 3 && rememberedName) {
+    if (msg === "yes" && path === "yes") {
+      myLevel = 4;
+      path = "yes";
+      return "You want a party in your mouth huh! Are you feeling sweet or bitter today?";
+    }
+    if (msg === "yes" && path === "no") {
+      myLevel = 4;
+      path = "yes";
+      return "Cold and not in the mood to party.  Sounds like a dire situation.  Are you low on energy?";
+    }
   }
-
-  if (rememberedName && msg === "bitter" && path === "yes" && myLevel === 4) {
-    myLevel = 5;
-    path = "bitter";
-    return "I agree, bitter is better. Let me pour you a beer. Dark or light?";
+  if (myLevel === 4 && rememberedName) {
+    if (msg === "bitter" && path === "yes") {
+      myLevel = 5;
+      path = "bitter";
+      return "I agree, bitter is better. Let me pour you a beer. Dark or light?";
+    }
+    if (msg === "no" && path === "yes") {
+      myLevel = 5;
+      path = "yes";
+      return "So your batteries are already charged today Anna.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type restart";
+    }
   }
 
   if (rememberedName && msg === "dark" && path === "bitter" && myLevel === 5) {
