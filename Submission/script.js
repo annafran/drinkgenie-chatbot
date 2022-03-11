@@ -64,7 +64,7 @@ const getBotReply = (msg) => {
     if (msg === "no" && path === "yes") {
       myLevel = 5;
       path = "yes";
-      return "So your batteries are already charged today Anna.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type restart";
+      return `So your batteries are already charged today ${userName}.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type restart`;
     }
   }
 
@@ -82,7 +82,7 @@ const getBotReply = (msg) => {
     return "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?";
   }
 
-  return "Ohoh that answer didn't make sense to me. I think you have already had too much to drink! Make sure you answer with one of the valid options";
+  return "Ohoh that answer didn't make sense to me. I think you have already had too much to drink! Make sure you answer with one of the valid options or type restart.";
 };
 
 export { getBotReply };

@@ -30,9 +30,9 @@ describe("getBotReply", () => {
       "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today.";
     // * Input: "really?"
     const botReply2 = getBotReply("really?");
-    // * Output: "Ohoh that answer didn't make sense to me. I think you have already had too much to drink! Make sure you answer with one of the valid options"
+    // * Output: "Ohoh that answer didn't make sense to me. I think you have already had too much to drink! Make sure you answer with one of the valid options or type restart."
     const expectedReply2 =
-      "Ohoh that answer didn't make sense to me. I think you have already had too much to drink! Make sure you answer with one of the valid options";
+      "Ohoh that answer didn't make sense to me. I think you have already had too much to drink! Make sure you answer with one of the valid options or type restart.";
 
     expect(botReply1).toEqual(expectedReply1);
     expect(botReply2).toEqual(expectedReply2);
@@ -92,7 +92,7 @@ describe("getBotReply", () => {
       "Cold and not in the mood to party.  Sounds like a dire situation.  Are you low on energy?";
     // * Input: "no"
     const botReply4 = getBotReply("no");
-    // * Output: "So your batteries are already charged today Anna.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type restart"
+    // * Output: "So your batteries are already charged today Anna.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type restart`
     const expectedReply4 =
       "So your batteries are already charged today Anna.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type restart";
 

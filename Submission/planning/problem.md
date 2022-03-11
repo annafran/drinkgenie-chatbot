@@ -52,7 +52,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 * Input: "Bob"
 * Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
 * Input: "really?"
-* Output: "Ohoh that answer didn't make sense to me. I think you have already had too much to drink! Make sure you answer with one of the valid options"
+* Output: "Ohoh that answer didn't make sense to me. I think you have already had too much to drink! Make sure you answer with one of the valid options or type restart."
   
 **Test 3**  
 
