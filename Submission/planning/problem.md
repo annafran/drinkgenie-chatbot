@@ -45,8 +45,16 @@ The chatbot will also respond to two instructions from the customer at any stage
 * Output: "I agree, bitter is better. Let me pour you a beer. Dark or light?"
 * Input: "dark"
 * Output: "Time for a Guinness.  This is a full meal in a glass! Be careful it will go straight to your head. Enjoy your drink and if you want another one, just type restart."
+
+**Test 2**
+
+* Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+* Input: "Bob"
+* Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Input: "really?"
+* Output: "Ohoh that answer didn't make sense to me. I think you have already had too much to drink! Make sure you answer with one of the valid options"
   
-**Test 2**  
+**Test 3**  
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: "Anna"
@@ -57,14 +65,6 @@ The chatbot will also respond to two instructions from the customer at any stage
 * Output: "Cold and not in the mood to party.  Sounds like a dire situation.  Are you low on energy?"
 * Input: "no"
 * Output: "So your batteries are already charged today Anna.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type restart"
-
-**Test 3**
-
-* Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
-* Input: "Thirsty gal"
-* Output: "Hola Thirsty gal, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
-* Input: "really?"
-* Output: "Ohoh that answer didn't make sense to me. I think you have already had too much to drink! Make sure you answer with one of the valid options"
 
 **Test 4**
 
