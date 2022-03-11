@@ -56,7 +56,7 @@ describe("getBotReply", () => {
     expect(botReply5).toEqual(expectedReply5);
   });
 
-  it("should greet the user by their name, then provide the correct answers for the yes, yes, bitter, dark path", () => {
+  it("should greet the user by their name, then provide the correct answers for the no, yes, no path", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Anna
     const botReply1 = getBotReply("Anna");
@@ -108,17 +108,25 @@ describe("getBotReply", () => {
     expect(botReply3).toEqual(expectedReply3);
   });
 
-  //   * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
-  //   * Input: "Anna"
-  const botReply1 = getBotReply("Anna");
-  //   * Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
-  const expectedReply1 =
-    "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today.";
-  //   * Input: "random"
-  const botReply2 = getBotReply("random");
-  //   * Output: "Bloody Bob"
-  const expectedReply2 = "Bloody Bob";
+  it("should provide a random drink option when the users types random", () => {
+    //   * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+    //   * Input: "Anna"
+    const botReply1 = getBotReply("Anna");
+    //   * Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+    const expectedReply1 =
+      "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today.";
+    //   * Input: "random"
+    const botReply2 = getBotReply("random");
+    //   * Output: "Bloody Bob" || "Jam n Tonic" || "Tequila Storm" || "Slime and Soda" || "Feeling Hot Hot Hot Chocolate";
+    const expectedReply2 = [
+      "Bloody Bob",
+      "Jam n Tonic",
+      "Tequila Storm",
+      "Slime and Soda",
+      "Feeling Hot Hot Hot Chocolate",
+    ];
 
-  expect(botReply1).toEqual(expectedReply1);
-  expect(botReply2).toEqual(expectedReply2);
+    expect(botReply1).toEqual(expectedReply1);
+    expect(expectedReply2).toContain(botReply2);
+  });
 });
