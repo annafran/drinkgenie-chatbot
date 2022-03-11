@@ -82,7 +82,7 @@ const getBotReply = (msg) => {
     return "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?";
   }
 
-  return "Error unknown...";
+  return "Ohoh that answer didn't make sense to me. I think you have already had too much to drink! Make sure you answer with one of the valid options";
 };
 
 export { getBotReply };
