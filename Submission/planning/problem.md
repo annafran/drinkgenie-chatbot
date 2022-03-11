@@ -81,5 +81,6 @@ The chatbot will also respond to two instructions from the customer at any stage
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: "Anna"
 * Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
-* Input: "Please select a random drink for me"
+* Input: "random"
 * Output: "Bloody Bob"
+

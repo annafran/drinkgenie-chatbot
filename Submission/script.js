@@ -9,8 +9,21 @@ let rememberedName = false;
 let userName = "";
 let myLevel = 1;
 let path = 0;
+const drinkOptions = [
+  "Bloody Bob",
+  "Jam n Tonic",
+  "Tequila Storm",
+  "Slime and Soda",
+  "Feeling Hot Hot Hot Chocolate",
+];
 
 const getBotReply = (msg) => {
+  if (rememberedName && msg === "random" && myLevel > 1) {
+    const randomDrink =
+      drinkOptions[Math.floor(Math.random() * drinkOptions.length)];
+    return randomDrink;
+  }
+
   if (rememberedName === false && myLevel === 1 && path === 0) {
     rememberedName = true;
     userName = msg;
