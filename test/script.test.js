@@ -108,7 +108,7 @@ describe("getBotReply", () => {
     expect(botReply3).toEqual(expectedReply3);
   });
 
-  it("should provide a random drink option when the users types random", () => {
+  it("should provide a random drink option when the user types random", () => {
     //   * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     //   * Input: "Anna"
     const botReply1 = getBotReply("Anna");
@@ -126,7 +126,11 @@ describe("getBotReply", () => {
       "Feeling Hot Hot Hot Chocolate",
     ];
 
+    const containsSome = (drinkOptions, botReply) => {
+      return drinkOptions.some((randomDrink) => botReply.includes(randomDrink));
+    };
+
     expect(botReply1).toEqual(expectedReply1);
-    expect(expectedReply2).toContain(botReply2);
+    expect(containsSome(expectedReply2, botReply2)).toBeTruthy();
   });
 });

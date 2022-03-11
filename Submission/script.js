@@ -18,17 +18,17 @@ const drinkOptions = [
 ];
 
 const getBotReply = (msg) => {
-  if (rememberedName && msg === "random" && myLevel > 1) {
-    const randomDrink =
-      drinkOptions[Math.floor(Math.random() * drinkOptions.length)];
-    return randomDrink;
-  }
-
   if (rememberedName === false && myLevel === 1 && path === 0) {
     rememberedName = true;
     userName = msg;
     myLevel = 2;
     return `Hola ${userName}, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today.`;
+  }
+
+  if (rememberedName && msg === "random" && myLevel > 1) {
+    const randomDrink =
+      drinkOptions[Math.floor(Math.random() * drinkOptions.length)];
+    return `Here's a ${randomDrink}. If you want to order again, just type restart or random.`;
   }
 
   if (rememberedName && msg === "yes" && myLevel === 2) {
