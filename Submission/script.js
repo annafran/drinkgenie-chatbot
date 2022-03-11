@@ -25,6 +25,14 @@ const getBotReply = (msg) => {
     return `Hola ${userName}, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today.`;
   }
 
+  if (rememberedName && msg === "restart" && myLevel > 1) {
+    myLevel = 1;
+    path = 0;
+    rememberedName = false;
+    userName = "";
+    return "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?";
+  }
+
   if (rememberedName && msg === "random" && myLevel > 1) {
     const randomDrink =
       drinkOptions[Math.floor(Math.random() * drinkOptions.length)];
@@ -72,14 +80,6 @@ const getBotReply = (msg) => {
     myLevel = 6;
     path = "dark";
     return "Time for a Guinness.  This is a full meal in a glass! Be careful it will go straight to your head. Enjoy your drink and if you want another one, just type restart.";
-  }
-
-  if (rememberedName && msg === "restart" && myLevel > 1) {
-    myLevel = 1;
-    path = 0;
-    rememberedName = false;
-    userName = "";
-    return "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?";
   }
 
   return "Ohoh that answer didn't make sense to me. I think you have already had too much to drink! Make sure you answer with one of the valid options or type restart.";
