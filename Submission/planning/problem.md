@@ -49,12 +49,82 @@ The chatbot will also respond to two instructions from the customer at any stage
 **Test 2**
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
-* Input: "Bob"
+* Input: Bob
 * Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
-* Input: "really?"
-* Output: "Ohoh that answer didn't make sense to me. I think you have already had too much to drink! Make sure you answer with one of the valid options or type restart."
-  
-**Test 3**  
+* Input: "yes"
+* Output: "Oh you are ready to party Bob! You are my type of person. Do you like the feeling of bubbles in your mouth?"
+* Input: "yes"
+* Output: "You want a party in your mouth huh! Are you feeling sweet or bitter today?"
+* Input "bitter"
+* Output: "I agree, bitter is better. Let me pour you a beer. Dark or light?"
+* Input: "light"
+* Output: "So you are a bit of a softie. I have the perfect hazy IPA for you. This is a craft beer from NZ. Enjoy your beer and if you want another drink, just type restart."
+
+**Test 3**
+
+* Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+* Input: Bob
+* Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Input: "yes"
+* Output: "Oh you are ready to party Bob! You are my type of person. Do you like the feeling of bubbles in your mouth?"
+* Input: "yes"
+* Output: "You want a party in your mouth huh! Are you feeling sweet or bitter today?"
+* Input: "sweet"
+* Output: "Ok sweetie I'll prepare you a mimosa, light and fruity just like you. Enjoy your drink and if you want another one, just type restart."
+
+**Test 4**
+
+* Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+* Input: Mary
+* Output: "Hola Mary, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Input: "yes"
+* Output: "Oh you are ready to party Bob! You are my type of person. Do you like the feeling of bubbles in your mouth?"
+* Input: "no"
+* Output: "No bubbles to beat the belly bloat, good choice. Tell me is it prior to midday?"
+* Input "yes"
+* Output: "Alcohol prior to midday - you must be Spanish! We will have to get you a vermut with some tapas. If that doesn't quench your thirst enough, just type restart and order again."
+
+**Test 5**
+
+* Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+* Input: Mary
+* Output: "Hola Mary, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Input: "yes"
+* Output: "Oh you are ready to party Bob! You are my type of person. Do you like the feeling of bubbles in your mouth?"
+* Input: "no"
+* Output: "No bubbles to beat the belly bloat, good choice. Tell me is it prior to midday?"
+* Input "no"
+* Output: "You are a bit too sensitive waiting until after midday to crack open your first drink.  Let's go with a wine - red or white?"
+* Input: "red"
+* Output: "Red red wiiiiineee, stay close to meeeee! This Argentinean Malbec is my favourite. Enjoy your vino tinto and if you want another one, just type restart."
+
+**Test 6**
+
+* Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+* Input: Mary
+* Output: "Hola Mary, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Input: "yes"
+* Output: "Oh you are ready to party Bob! You are my type of person. Do you like the feeling of bubbles in your mouth?"
+* Input: "no"
+* Output: "No bubbles to beat the belly bloat, good choice. Tell me is it prior to midday?"
+* Input "no"
+* Output: "You are a bit too sensitive waiting until after midday to crack open your first drink.  Let's go with a wine - red or white?"
+* Input: "white"
+* Output: "Fresh and fruity, I do love myself a pinot gris.  Give this one from Waiheke Island a swirl in your mouth. If you need another just type restart."
+
+**Test 7**  
+
+* Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+* Input: "Anna"
+* Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Input: "no"
+* Output: "Aren't you boring! Not in the mood to party Anna? Are you feeling cold?"
+* Input: "yes"
+* Output: "Cold and not in the mood to party.  Sounds like a dire situation.  Are you low on energy?"
+* Input: "yes"
+* Output: "Let's quickly get a triple shot hot coffee into you before you fade away on me. If the 3 shots don't revive you and you need another, just type restart."
+
+**Test 8**  
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: "Anna"
@@ -64,23 +134,70 @@ The chatbot will also respond to two instructions from the customer at any stage
 * Input: "yes"
 * Output: "Cold and not in the mood to party.  Sounds like a dire situation.  Are you low on energy?"
 * Input: "no"
-* Output: "So your batteries are already charged today Anna.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type restart"
+* Output: "So your batteries are already charged today Anna.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type restart."
 
-**Test 4**
+**Test 9**  
+
+* Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+* Input: "Anna"
+* Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Input: "no"
+* Output: "Aren't you boring! Not in the mood to party Anna? Are you feeling cold?"
+* Input: "no"
+* Output: "Ok, something refreshing, let me think...Are you watching your waistline?"
+* Input: "yes"
+* Output: "Sorry Anna, no fun drinks for you. I'll get you a water with cucumber.  I bet you regret your answer now huh! Enjoy your water and if you are still thirsty, just type restart."
+
+**Test 10**  
+
+* Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+* Input: "Anna"
+* Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Input: "no"
+* Output: "Aren't you boring! Not in the mood to party Anna? Are you feeling cold?"
+* Input: "no"
+* Output: "Ok, something refreshing, let me think...Are you watching your waistline?"
+* Input: "no"
+* Output: "Good answer. You can have the fat option - an iced chocolate with an extra serving of cream on top. I'll be hanging out here so if you want another beverage just type restart."
+
+**Test 11**
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: "Bob"
 * Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
-* Input: "Please restart the order"
+* Input: "restart"
 * Output: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * * Input: "Anna"
 * Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
 
-**Test 5**
+**Test 12**
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: "Anna"
 * Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
 * Input: "random"
 * Output: "Bloody Bob"
+  
+**Test 13**
+
+* Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+* Input: "Bob"
+* Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Input: "really?"
+* Output: "Ohoh that answer didn't make sense to me. I think you have already had too much to drink! Make sure you answer with one of the valid options or type restart."
+
+**Test 14**
+
+* Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+* Input: Bob
+* Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Input: "YEAH"
+* Output: "Oh you are ready to party Bob! You are my type of person. Do you like the feeling of bubbles in your mouth?"
+* Input: "yes"
+* Output: "You want a party in your mouth huh! Are you feeling sweet or bitter today?"
+* Input: "bitter"
+* Output: "I agree, bitter is better. Let me pour you a beer. Dark or light?"
+* Input: "dark"
+* Output: "Time for a Guinness.  This is a full meal in a glass! Be careful it will go straight to your head. Enjoy your drink and if you want another one, just type restart."
+
 

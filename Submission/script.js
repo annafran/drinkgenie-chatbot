@@ -55,43 +55,39 @@ const getBotReply = (msg) => {
   if (myLevel === 2 && rememberedName) {
     if (negativeMsg) {
       myLevel = 3;
-      path = "no";
+      path = 2;
       return `Aren't you boring! Not in the mood to party ${userName}? Are you feeling cold?`;
     }
     if (affirmativeMsg) {
       myLevel = 3;
-      path = "yes";
+      path = 1;
       return `Oh you are ready to party ${userName}! You are my type of person. Do you like the feeling of bubbles in your mouth?`;
     }
   }
   if (myLevel === 3 && rememberedName) {
-    if (affirmativeMsg && path === "yes") {
+    if (affirmativeMsg && path === 1) {
       myLevel = 4;
-      path = "yes";
       return "You want a party in your mouth huh! Are you feeling sweet or bitter today?";
     }
-    if (affirmativeMsg && path === "no") {
+    if (affirmativeMsg && path === 2) {
       myLevel = 4;
-      path = "yes";
       return "Cold and not in the mood to party.  Sounds like a dire situation.  Are you low on energy?";
     }
   }
   if (myLevel === 4 && rememberedName) {
-    if (msg === "bitter" && path === "yes") {
+    if (msg === "bitter" && path === 1) {
       myLevel = 5;
-      path = "bitter";
       return "I agree, bitter is better. Let me pour you a beer. Dark or light?";
     }
-    if (negativeMsg && path === "yes") {
+    if (negativeMsg && path === 2) {
       myLevel = 5;
-      path = "yes";
       return `So your batteries are already charged today ${userName}.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type restart`;
     }
   }
 
-  if (rememberedName && msg === "dark" && path === "bitter" && myLevel === 5) {
+  if (rememberedName && msg === "dark" && path === 1 && myLevel === 5) {
     myLevel = 6;
-    path = "dark";
+    path = 1;
     return "Time for a Guinness.  This is a full meal in a glass! Be careful it will go straight to your head. Enjoy your drink and if you want another one, just type restart.";
   }
 
