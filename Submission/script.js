@@ -91,6 +91,10 @@ const getBotReply = (msg) => {
       myLevel = 5;
       return "Alcohol prior to midday - you must be Spanish! We will have to get you a vermut with some tapas. If that doesn't quench your thirst enough, just type restart and order again.";
     }
+    if (negativeMsg && path === 1) {
+      myLevel = 5;
+      return "You are a bit too sensitive waiting until after midday to crack open your first drink.  Let's go with a wine - red or white?";
+    }
     if (negativeMsg && path === 2) {
       myLevel = 5;
       return `So your batteries are already charged today ${userName}.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type restart`;
@@ -104,6 +108,10 @@ const getBotReply = (msg) => {
     if (msgLowerCase === "light" && path === 1) {
       myLevel = 6;
       return "So you are a bit of a softie. I have the perfect hazy IPA for you. This is a craft beer from NZ. Enjoy your beer and if you want another drink, just type restart.";
+    }
+    if (msgLowerCase === "red" && path === 1) {
+      myLevel = 6;
+      return "Red red wiiiiineee, stay close to meeeee! This Argentinean Malbec is my favourite. Enjoy your vino tinto and if you want another one, just type restart.";
     }
   }
 

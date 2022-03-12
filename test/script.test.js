@@ -149,6 +149,41 @@ describe("getBotReply", () => {
     expect(botReply4).toEqual(expectedReply4);
   });
 
+  it("should greet the user by their name, then provide the correct answers for the yes, no, no, red path", () => {
+    // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+    // * Input: Mary
+    const botReply1 = getBotReply("Mary");
+    // * Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+    const expectedReply1 =
+      "Hola Mary, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today.";
+    // * Input: "yes"
+    const botReply2 = getBotReply("yes");
+    // * Output: "Oh you are ready to party Mary! You are my type of person. Do you like the feeling of bubbles in your mouth?"
+    const expectedReply2 =
+      "Oh you are ready to party Mary! You are my type of person. Do you like the feeling of bubbles in your mouth?";
+    // * Input: "no"
+    const botReply3 = getBotReply("no");
+    // * Output: "No bubbles to beat the belly bloat, good choice. Tell me is it prior to midday?"
+    const expectedReply3 =
+      "No bubbles to beat the belly bloat, good choice. Tell me is it prior to midday?";
+    // * Input: "no"
+    const botReply4 = getBotReply("no");
+    // * Output: "You are a bit too sensitive waiting until after midday to crack open your first drink.  Let's go with a wine - red or white?"
+    const expectedReply4 =
+      "You are a bit too sensitive waiting until after midday to crack open your first drink.  Let's go with a wine - red or white?";
+    // * Input: "red"
+    const botReply5 = getBotReply("red");
+    // * Output: "Red red wiiiiineee, stay close to meeeee! This Argentinean Malbec is my favourite. Enjoy your vino tinto and if you want another one, just type restart."
+    const expectedReply5 =
+      "Red red wiiiiineee, stay close to meeeee! This Argentinean Malbec is my favourite. Enjoy your vino tinto and if you want another one, just type restart.";
+
+    expect(botReply1).toEqual(expectedReply1);
+    expect(botReply2).toEqual(expectedReply2);
+    expect(botReply3).toEqual(expectedReply3);
+    expect(botReply4).toEqual(expectedReply4);
+    expect(botReply5).toEqual(expectedReply5);
+  });
+
   it("should greet the user by their name, then provide the correct answers for the no, yes, no path", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Anna
