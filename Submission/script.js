@@ -113,6 +113,10 @@ const getBotReply = (msg) => {
       myLevel = 5;
       return `Sorry ${userName}, no fun drinks for you. I'll get you a water with cucumber.  I bet you regret your answer now huh! Enjoy your water and if you are still thirsty, just type restart.`;
     }
+    if (negativeMsg && path === 2.2) {
+      myLevel = 5;
+      return "Good answer. You can have the fat option - an iced chocolate with an extra serving of cream on top. I'll be hanging out here so if you want another beverage just type restart.";
+    }
   }
   if (myLevel === 5 && rememberedName) {
     if (msgLowerCase === "dark" && path === 1) {
