@@ -113,6 +113,10 @@ const getBotReply = (msg) => {
       myLevel = 6;
       return "Red red wiiiiineee, stay close to meeeee! This Argentinean Malbec is my favourite. Enjoy your vino tinto and if you want another one, just type restart.";
     }
+    if (msgLowerCase === "white" && path === 1) {
+      myLevel = 6;
+      return "Fresh and fruity, I do love myself a pinot gris.  Give this one from Waiheke Island a swirl in your mouth. If you need another just type restart.";
+    }
   }
 
   return "Ohoh that answer didn't make sense to me. I think you have already had too much to drink! Make sure you answer with one of the valid options or type restart.";

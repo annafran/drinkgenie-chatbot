@@ -78,7 +78,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 * Input: Mary
 * Output: "Hola Mary, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
 * Input: "yes"
-* Output: "Oh you are ready to party Bob! You are my type of person. Do you like the feeling of bubbles in your mouth?"
+* Output: "Oh you are ready to party Mary! You are my type of person. Do you like the feeling of bubbles in your mouth?"
 * Input: "no"
 * Output: "No bubbles to beat the belly bloat, good choice. Tell me is it prior to midday?"
 * Input "yes"
@@ -90,7 +90,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 * Input: Mary
 * Output: "Hola Mary, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
 * Input: "yes"
-* Output: "Oh you are ready to party Bob! You are my type of person. Do you like the feeling of bubbles in your mouth?"
+* Output: "Oh you are ready to party Mary! You are my type of person. Do you like the feeling of bubbles in your mouth?"
 * Input: "no"
 * Output: "No bubbles to beat the belly bloat, good choice. Tell me is it prior to midday?"
 * Input "no"
@@ -104,7 +104,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 * Input: Mary
 * Output: "Hola Mary, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
 * Input: "yes"
-* Output: "Oh you are ready to party Bob! You are my type of person. Do you like the feeling of bubbles in your mouth?"
+* Output: "Oh you are ready to party Mary! You are my type of person. Do you like the feeling of bubbles in your mouth?"
 * Input: "no"
 * Output: "No bubbles to beat the belly bloat, good choice. Tell me is it prior to midday?"
 * Input "no"
