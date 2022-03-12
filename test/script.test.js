@@ -91,6 +91,35 @@ describe("getBotReply", () => {
     expect(botReply5).toEqual(expectedReply5);
   });
 
+  it("should greet the user by their name, then provide the correct answers for the yes, yes, sweet path", () => {
+    // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+    // * Input: Bob
+    const botReply1 = getBotReply("Bob");
+    // * Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+    const expectedReply1 =
+      "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today.";
+    // * Input: "yes"
+    const botReply2 = getBotReply("yes");
+    // * Output: "Oh you are ready to party Bob! You are my type of person. Do you like the feeling of bubbles in your mouth?"
+    const expectedReply2 =
+      "Oh you are ready to party Bob! You are my type of person. Do you like the feeling of bubbles in your mouth?";
+    // * Input: "yes"
+    const botReply3 = getBotReply("yes");
+    // * Output: "You want a party in your mouth huh! Are you feeling sweet or bitter today?"
+    const expectedReply3 =
+      "You want a party in your mouth huh! Are you feeling sweet or bitter today?";
+    // * Input: "sweet"
+    const botReply4 = getBotReply("sweet");
+    // * Output: "Ok sweetie I'll prepare you a mimosa, light and fruity just like you. Enjoy your drink and if you want another one, just type restart."
+    const expectedReply4 =
+      "Ok sweetie I'll prepare you a mimosa, light and fruity just like you. Enjoy your drink and if you want another one, just type restart.";
+
+    expect(botReply1).toEqual(expectedReply1);
+    expect(botReply2).toEqual(expectedReply2);
+    expect(botReply3).toEqual(expectedReply3);
+    expect(botReply4).toEqual(expectedReply4);
+  });
+
   it("should greet the user by their name, then provide the correct answers for the no, yes, no path", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Anna

@@ -79,6 +79,10 @@ const getBotReply = (msg) => {
       myLevel = 5;
       return "I agree, bitter is better. Let me pour you a beer. Dark or light?";
     }
+    if (msgLowerCase === "sweet" && path === 1) {
+      myLevel = 5;
+      return "Ok sweetie I'll prepare you a mimosa, light and fruity just like you. Enjoy your drink and if you want another one, just type restart.";
+    }
     if (negativeMsg && path === 2) {
       myLevel = 5;
       return `So your batteries are already charged today ${userName}.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type restart`;
