@@ -95,6 +95,10 @@ const getBotReply = (msg) => {
       myLevel = 5;
       return "You are a bit too sensitive waiting until after midday to crack open your first drink.  Let's go with a wine - red or white?";
     }
+    if (affirmativeMsg && path === 2) {
+      myLevel = 5;
+      return "Let's quickly get a triple shot hot coffee into you before you fade away on me. If the 3 shots don't revive you and you need another, just type restart.";
+    }
     if (negativeMsg && path === 2) {
       myLevel = 5;
       return `So your batteries are already charged today ${userName}.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type restart`;
