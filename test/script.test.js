@@ -247,6 +247,7 @@ describe("getBotReply", () => {
     expect(botReply3).toEqual(expectedReply3);
     expect(botReply4).toEqual(expectedReply4);
   });
+
   it("should greet the user by their name, then provide the correct answers for the no, yes, no path", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Anna
@@ -269,6 +270,35 @@ describe("getBotReply", () => {
     // * Output: "So your batteries are already charged today Anna.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type restart`
     const expectedReply4 =
       "So your batteries are already charged today Anna.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type restart";
+
+    expect(botReply1).toEqual(expectedReply1);
+    expect(botReply2).toEqual(expectedReply2);
+    expect(botReply3).toEqual(expectedReply3);
+    expect(botReply4).toEqual(expectedReply4);
+  });
+
+  it("should greet the user by their name, then provide the correct answers for the no, no, yes path", () => {
+    // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+    // * Input: Anna
+    const botReply1 = getBotReply("Anna");
+    // * Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+    const expectedReply1 =
+      "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today.";
+    // * Input: "no"
+    const botReply2 = getBotReply("no");
+    // * Output: "Aren't you boring! Not in the mood to party Anna? Are you feeling cold?"
+    const expectedReply2 =
+      "Aren't you boring! Not in the mood to party Anna? Are you feeling cold?";
+    // * Input: "no"
+    const botReply3 = getBotReply("no");
+    // * Output: "Ok, something refreshing, let me think...Are you watching your waistline?"
+    const expectedReply3 =
+      "Ok, something refreshing, let me think...Are you watching your waistline?";
+    // * Input: "yes"
+    const botReply4 = getBotReply("yes");
+    // * Output: "Sorry Anna, no fun drinks for you. I'll get you a water with cucumber.  I bet you regret your answer now huh! Enjoy your water and if you are still thirsty, just type restart."
+    const expectedReply4 =
+      "Sorry Anna, no fun drinks for you. I'll get you a water with cucumber.  I bet you regret your answer now huh! Enjoy your water and if you are still thirsty, just type restart.";
 
     expect(botReply1).toEqual(expectedReply1);
     expect(botReply2).toEqual(expectedReply2);

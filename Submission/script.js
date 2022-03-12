@@ -75,7 +75,13 @@ const getBotReply = (msg) => {
     }
     if (affirmativeMsg && path === 2) {
       myLevel = 4;
+      path = 2.1;
       return "Cold and not in the mood to party.  Sounds like a dire situation.  Are you low on energy?";
+    }
+    if (negativeMsg && path === 2) {
+      myLevel = 4;
+      path = 2.2;
+      return "Ok, something refreshing, let me think...Are you watching your waistline?";
     }
   }
   if (myLevel === 4 && rememberedName) {
@@ -95,13 +101,17 @@ const getBotReply = (msg) => {
       myLevel = 5;
       return "You are a bit too sensitive waiting until after midday to crack open your first drink.  Let's go with a wine - red or white?";
     }
-    if (affirmativeMsg && path === 2) {
+    if (affirmativeMsg && path === 2.1) {
       myLevel = 5;
       return "Let's quickly get a triple shot hot coffee into you before you fade away on me. If the 3 shots don't revive you and you need another, just type restart.";
     }
-    if (negativeMsg && path === 2) {
+    if (negativeMsg && path === 2.1) {
       myLevel = 5;
       return `So your batteries are already charged today ${userName}.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type restart`;
+    }
+    if (affirmativeMsg && path === 2.2) {
+      myLevel = 5;
+      return `Sorry ${userName}, no fun drinks for you. I'll get you a water with cucumber.  I bet you regret your answer now huh! Enjoy your water and if you are still thirsty, just type restart.`;
     }
   }
   if (myLevel === 5 && rememberedName) {
