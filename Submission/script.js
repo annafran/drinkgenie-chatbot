@@ -16,8 +16,21 @@ const drinkOptions = [
   "Slime and Soda",
   "Feeling Hot Hot Hot Chocolate",
 ];
+const isAffirmativeAnswers = ["yes", "yeah", "yup", "yea", "y"];
+const isNegativeAnswers = ["no", "n", "nup", "nah"];
 
 const getBotReply = (msg) => {
+  const msgLowerCase = msg.toLowerCase();
+  let affirmativeMsg;
+  if (isAffirmativeAnswers.includes(msgLowerCase)) {
+    affirmativeMsg = true;
+  }
+
+  let negativeMsg;
+  if (isNegativeAnswers.includes(msgLowerCase)) {
+    negativeMsg = true;
+  }
+
   if (rememberedName === false && myLevel === 1 && path === 0) {
     rememberedName = true;
     userName = msg;
@@ -40,24 +53,24 @@ const getBotReply = (msg) => {
   }
 
   if (myLevel === 2 && rememberedName) {
-    if (msg === "no") {
+    if (negativeMsg) {
       myLevel = 3;
       path = "no";
       return `Aren't you boring! Not in the mood to party ${userName}? Are you feeling cold?`;
     }
-    if (msg === "yes") {
+    if (affirmativeMsg) {
       myLevel = 3;
       path = "yes";
       return `Oh you are ready to party ${userName}! You are my type of person. Do you like the feeling of bubbles in your mouth?`;
     }
   }
   if (myLevel === 3 && rememberedName) {
-    if (msg === "yes" && path === "yes") {
+    if (affirmativeMsg && path === "yes") {
       myLevel = 4;
       path = "yes";
       return "You want a party in your mouth huh! Are you feeling sweet or bitter today?";
     }
-    if (msg === "yes" && path === "no") {
+    if (affirmativeMsg && path === "no") {
       myLevel = 4;
       path = "yes";
       return "Cold and not in the mood to party.  Sounds like a dire situation.  Are you low on energy?";
@@ -69,7 +82,7 @@ const getBotReply = (msg) => {
       path = "bitter";
       return "I agree, bitter is better. Let me pour you a beer. Dark or light?";
     }
-    if (msg === "no" && path === "yes") {
+    if (negativeMsg && path === "yes") {
       myLevel = 5;
       path = "yes";
       return `So your batteries are already charged today ${userName}.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type restart`;
