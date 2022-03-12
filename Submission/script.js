@@ -84,16 +84,15 @@ const getBotReply = (msg) => {
       return `So your batteries are already charged today ${userName}.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type restart`;
     }
   }
-
-  if (
-    rememberedName &&
-    msgLowerCase === "dark" &&
-    path === 1 &&
-    myLevel === 5
-  ) {
-    myLevel = 6;
-    path = 1;
-    return "Time for a Guinness.  This is a full meal in a glass! Be careful it will go straight to your head. Enjoy your drink and if you want another one, just type restart.";
+  if (myLevel === 5 && rememberedName) {
+    if (msgLowerCase === "dark" && path === 1) {
+      myLevel = 6;
+      return "Time for a Guinness.  This is a full meal in a glass! Be careful it will go straight to your head. Enjoy your drink and if you want another one, just type restart.";
+    }
+    if (msgLowerCase === "light" && path === 1) {
+      myLevel = 6;
+      return "So you are a bit of a softie. I have the perfect hazy IPA for you. This is a craft beer from NZ. Enjoy your beer and if you want another drink, just type restart.";
+    }
   }
 
   return "Ohoh that answer didn't make sense to me. I think you have already had too much to drink! Make sure you answer with one of the valid options or type restart.";

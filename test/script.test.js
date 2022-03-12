@@ -21,23 +21,6 @@ describe("getBotReply", () => {
     expect(botReply1).toEqual(expectedReply1);
   });
 
-  it("should provide instructions to reenter input if the bot doesn't understand", () => {
-    // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
-    // * Input: Bob
-    const botReply1 = getBotReply("Bob");
-    // * Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
-    const expectedReply1 =
-      "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today.";
-    // * Input: "really?"
-    const botReply2 = getBotReply("really?");
-    // * Output: "Ohoh that answer didn't make sense to me. I think you have already had too much to drink! Make sure you answer with one of the valid options or type restart."
-    const expectedReply2 =
-      "Ohoh that answer didn't make sense to me. I think you have already had too much to drink! Make sure you answer with one of the valid options or type restart.";
-
-    expect(botReply1).toEqual(expectedReply1);
-    expect(botReply2).toEqual(expectedReply2);
-  });
-
   it("should greet the user by their name, then provide the correct answers for the yes, yes, bitter, dark path", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Bob
@@ -65,6 +48,41 @@ describe("getBotReply", () => {
     // * Output: "Time for a Guinness.  This is a full meal in a glass! Be careful it will go straight to your head. Enjoy your drink and if you want another one, just type restart."
     const expectedReply5 =
       "Time for a Guinness.  This is a full meal in a glass! Be careful it will go straight to your head. Enjoy your drink and if you want another one, just type restart.";
+
+    expect(botReply1).toEqual(expectedReply1);
+    expect(botReply2).toEqual(expectedReply2);
+    expect(botReply3).toEqual(expectedReply3);
+    expect(botReply4).toEqual(expectedReply4);
+    expect(botReply5).toEqual(expectedReply5);
+  });
+
+  it("should greet the user by their name, then provide the correct answers for the yes, yes, bitter, light path", () => {
+    // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+    // * Input: Bob
+    const botReply1 = getBotReply("Bob");
+    // * Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+    const expectedReply1 =
+      "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today.";
+    // * Input: "yes"
+    const botReply2 = getBotReply("yes");
+    // * Output: "Oh you are ready to party Bob! You are my type of person. Do you like the feeling of bubbles in your mouth?"
+    const expectedReply2 =
+      "Oh you are ready to party Bob! You are my type of person. Do you like the feeling of bubbles in your mouth?";
+    // * Input: "yes"
+    const botReply3 = getBotReply("yes");
+    // * Output: "You want a party in your mouth huh! Are you feeling sweet or bitter today?"
+    const expectedReply3 =
+      "You want a party in your mouth huh! Are you feeling sweet or bitter today?";
+    // * Input: "bitter"
+    const botReply4 = getBotReply("bitter");
+    // * Output: "I agree, bitter is better. Let me pour you a beer. Dark or light?"
+    const expectedReply4 =
+      "I agree, bitter is better. Let me pour you a beer. Dark or light?";
+    // * Input: "light"
+    const botReply5 = getBotReply("light");
+    // * Output: "So you are a bit of a softie. I have the perfect hazy IPA for you. This is a craft beer from NZ. Enjoy your beer and if you want another drink, just type restart."
+    const expectedReply5 =
+      "So you are a bit of a softie. I have the perfect hazy IPA for you. This is a craft beer from NZ. Enjoy your beer and if you want another drink, just type restart.";
 
     expect(botReply1).toEqual(expectedReply1);
     expect(botReply2).toEqual(expectedReply2);
@@ -149,6 +167,23 @@ describe("getBotReply", () => {
 
     expect(botReply1).toEqual(expectedReply1);
     expect(containsSome(expectedReply2, botReply2)).toBeTruthy();
+  });
+
+  it("should provide instructions to reenter input if the bot doesn't understand", () => {
+    // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+    // * Input: Bob
+    const botReply1 = getBotReply("Bob");
+    // * Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+    const expectedReply1 =
+      "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today.";
+    // * Input: "really?"
+    const botReply2 = getBotReply("really?");
+    // * Output: "Ohoh that answer didn't make sense to me. I think you have already had too much to drink! Make sure you answer with one of the valid options or type restart."
+    const expectedReply2 =
+      "Ohoh that answer didn't make sense to me. I think you have already had too much to drink! Make sure you answer with one of the valid options or type restart.";
+
+    expect(botReply1).toEqual(expectedReply1);
+    expect(botReply2).toEqual(expectedReply2);
   });
 
   it("should provide the correct answers for the YEAH, Y, bitter, Dark path (capitilisation and variation of yes cases)", () => {
