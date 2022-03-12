@@ -193,11 +193,22 @@ The chatbot will also respond to two instructions from the customer at any stage
 * Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
 * Input: "YEAH"
 * Output: "Oh you are ready to party Bob! You are my type of person. Do you like the feeling of bubbles in your mouth?"
-* Input: "yes"
+* Input: "Y"
 * Output: "You want a party in your mouth huh! Are you feeling sweet or bitter today?"
 * Input: "bitter"
 * Output: "I agree, bitter is better. Let me pour you a beer. Dark or light?"
-* Input: "dark"
+* Input: "Dark"
 * Output: "Time for a Guinness.  This is a full meal in a glass! Be careful it will go straight to your head. Enjoy your drink and if you want another one, just type restart."
 
+**Test 15**  
+
+* Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+* Input: "Anna"
+* Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Input: "Nup"
+* Output: "Aren't you boring! Not in the mood to party Anna? Are you feeling cold?"
+* Input: "yes"
+* Output: "Cold and not in the mood to party.  Sounds like a dire situation.  Are you low on energy?"
+* Input: "N"
+* Output: "So your batteries are already charged today Anna.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type restart."
 

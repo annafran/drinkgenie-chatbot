@@ -75,7 +75,7 @@ const getBotReply = (msg) => {
     }
   }
   if (myLevel === 4 && rememberedName) {
-    if (msg === "bitter" && path === 1) {
+    if (msgLowerCase === "bitter" && path === 1) {
       myLevel = 5;
       return "I agree, bitter is better. Let me pour you a beer. Dark or light?";
     }
@@ -85,7 +85,12 @@ const getBotReply = (msg) => {
     }
   }
 
-  if (rememberedName && msg === "dark" && path === 1 && myLevel === 5) {
+  if (
+    rememberedName &&
+    msgLowerCase === "dark" &&
+    path === 1 &&
+    myLevel === 5
+  ) {
     myLevel = 6;
     path = 1;
     return "Time for a Guinness.  This is a full meal in a glass! Be careful it will go straight to your head. Enjoy your drink and if you want another one, just type restart.";
