@@ -16,8 +16,8 @@ const drinkOptions = [
   "Slime and Soda",
   "Feeling Hot Hot Hot Chocolate",
 ];
-const isAffirmativeAnswers = ["yes", "yeah", "yup", "yea", "y"];
-const isNegativeAnswers = ["no", "n", "nup", "nah"];
+const isAffirmativeAnswers = ["yes", "yeah", "yup", "yea", "y", "yep"];
+const isNegativeAnswers = ["no", "n", "nup", "nah", "nope"];
 
 const getBotReply = (msg) => {
   const msgLowerCase = msg.toLowerCase();
