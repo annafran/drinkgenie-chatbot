@@ -120,6 +120,35 @@ describe("getBotReply", () => {
     expect(botReply4).toEqual(expectedReply4);
   });
 
+  it("should greet the user by their name, then provide the correct answers for the yes, no, yes path", () => {
+    // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+    // * Input: Mary
+    const botReply1 = getBotReply("Mary");
+    // * Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+    const expectedReply1 =
+      "Hola Mary, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today.";
+    // * Input: "yes"
+    const botReply2 = getBotReply("yes");
+    // * Output: "Oh you are ready to party Mary! You are my type of person. Do you like the feeling of bubbles in your mouth?"
+    const expectedReply2 =
+      "Oh you are ready to party Mary! You are my type of person. Do you like the feeling of bubbles in your mouth?";
+    // * Input: "no"
+    const botReply3 = getBotReply("no");
+    // * Output: "No bubbles to beat the belly bloat, good choice. Tell me is it prior to midday?"
+    const expectedReply3 =
+      "No bubbles to beat the belly bloat, good choice. Tell me is it prior to midday?";
+    // * Input: "yes"
+    const botReply4 = getBotReply("yes");
+    // * Output: "Alcohol prior to midday - you must be Spanish! We will have to get you a vermut with some tapas. If that doesn't quench your thirst enough, just type restart and order again."
+    const expectedReply4 =
+      "Alcohol prior to midday - you must be Spanish! We will have to get you a vermut with some tapas. If that doesn't quench your thirst enough, just type restart and order again.";
+
+    expect(botReply1).toEqual(expectedReply1);
+    expect(botReply2).toEqual(expectedReply2);
+    expect(botReply3).toEqual(expectedReply3);
+    expect(botReply4).toEqual(expectedReply4);
+  });
+
   it("should greet the user by their name, then provide the correct answers for the no, yes, no path", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Anna

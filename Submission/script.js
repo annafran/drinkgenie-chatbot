@@ -69,6 +69,10 @@ const getBotReply = (msg) => {
       myLevel = 4;
       return "You want a party in your mouth huh! Are you feeling sweet or bitter today?";
     }
+    if (negativeMsg && path === 1) {
+      myLevel = 4;
+      return "No bubbles to beat the belly bloat, good choice. Tell me is it prior to midday?";
+    }
     if (affirmativeMsg && path === 2) {
       myLevel = 4;
       return "Cold and not in the mood to party.  Sounds like a dire situation.  Are you low on energy?";
@@ -82,6 +86,10 @@ const getBotReply = (msg) => {
     if (msgLowerCase === "sweet" && path === 1) {
       myLevel = 5;
       return "Ok sweetie I'll prepare you a mimosa, light and fruity just like you. Enjoy your drink and if you want another one, just type restart.";
+    }
+    if (affirmativeMsg && path === 1) {
+      myLevel = 5;
+      return "Alcohol prior to midday - you must be Spanish! We will have to get you a vermut with some tapas. If that doesn't quench your thirst enough, just type restart and order again.";
     }
     if (negativeMsg && path === 2) {
       myLevel = 5;
