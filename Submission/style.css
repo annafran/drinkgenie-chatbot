@@ -2,6 +2,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Fredoka", sans-serif;
 }
 
 .chatbot-interface {
@@ -18,6 +19,9 @@ body {
 
 .heading {
   margin: 0 auto;
+  font-family: "Sansita Swashed", cursive;
+  font-size: 4rem;
+  color: #997b66;
 }
 
 .bot-face {
@@ -51,6 +55,10 @@ body {
 .chat-input {
   width: 100%;
   font-size: 1.5em;
+  font-family: "Fredoka", sans-serif;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.4rem;
 }
 
 .btn-chat-send {
@@ -58,6 +66,9 @@ body {
   font-size: 1.5em;
   overflow: hidden;
   text-overflow: ellipsis;
+  border: none;
+  border-radius: 0.4rem;
+  margin-left: 1rem;
 }
 
 .chatbox-container {
@@ -85,9 +96,8 @@ body {
 }
 
 .chat-item-user {
-  font-family: "Roboto", sans-serif;
   text-align: right;
-  border: 2px solid #ccc;
+  /* border: 2px solid #ccc; */
   padding: 1rem;
   border-radius: 10px 0px 10px 10px;
   max-width: 60%;
@@ -97,9 +107,7 @@ body {
 }
 
 .chat-item-bot {
-  font-family: "Roboto Mono", monospace;
   text-align: left;
-  border: 2px solid #ccc;
   padding: 1rem;
   border-radius: 0px 10px 10px 10px;
   max-width: 60%;
