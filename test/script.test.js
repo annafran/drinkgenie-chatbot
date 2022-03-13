@@ -454,4 +454,37 @@ describe("getBotReply", () => {
     expect(botReply3).toEqual(expectedReply3);
     expect(botReply4).toEqual(expectedReply4);
   });
+
+  it("should reply with the correct answer if the user enters jukebox, then continue with the correct path, then the correct answer if the user enters stop", () => {
+    // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+    // * Input: Bob
+    const botReply1 = getBotReply("Bob");
+    // * Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? I've already had a few myself toooodayyyyyy."
+    const expectedReply1 =
+      "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? I've already had a few myself toooodayyyyyy.";
+    // * Input: "jukebox"
+    const botReply2 = getBotReply("jukebox");
+    // * Output: `Here is a bit of bar ambience.  If it gets too noisy, just type <em>stop</em> at anytime. Let's continue with your drink order...what was your answer to my last question? Otherwise type <em>restart</em> and we can order again from scratch.`
+    const expectedReply2 = `Here is a bit of bar ambience.  If it gets too noisy, just type <em>stop</em> at anytime. Let's continue with your drink order...what was your answer to my last question? Otherwise type <em>restart</em> and we can order again from scratch.`;
+    // * Input: "no"
+    const botReply3 = getBotReply("no");
+    // * Output: "Aren't you boring! Not in the mood to party Bob? Are you feeling cold?"
+    const expectedReply3 =
+      "Aren't you boring! Not in the mood to party Bob? Are you feeling cold?";
+    // * Input: "stop"
+    const botReply4 = getBotReply("stop");
+    // * Output: `I agree that it got pretty noisy in here! Let's continue with your drink order...what was your answer to my last question? Otherwise type <em>restart</em> and we can order again from scratch.`
+    const expectedReply4 = `I agree that it got pretty noisy in here! Let's continue with your drink order...what was your answer to my last question? Otherwise type <em>restart</em> and we can order again from scratch.`;
+    // * Input: "restart"
+    const botReply5 = getBotReply("restart");
+    // * Output: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+    const expectedReply5 =
+      "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?";
+
+    expect(botReply1).toEqual(expectedReply1);
+    expect(botReply2).toEqual(expectedReply2);
+    expect(botReply3).toEqual(expectedReply3);
+    expect(botReply4).toEqual(expectedReply4);
+    expect(botReply5).toEqual(expectedReply5);
+  });
 });

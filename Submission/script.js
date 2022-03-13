@@ -54,7 +54,7 @@ const getBotReply = (msg) => {
   }
 
   if (rememberedName && msg === "jukebox" && myLevel > 1) {
-    const playMusic = function () {
+    const playMusic = () => {
       const myAudio = document.getElementById("bar-music");
       myAudio.play();
     };
@@ -63,7 +63,7 @@ const getBotReply = (msg) => {
   }
 
   if (rememberedName && msg === "stop" && myLevel > 1) {
-    const stopMusic = function () {
+    const stopMusic = () => {
       const myAudio = document.getElementById("bar-music");
       myAudio.pause();
     };
