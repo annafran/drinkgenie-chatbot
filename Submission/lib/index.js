@@ -2,6 +2,7 @@ import { getBotReply } from "../script.js";
 
 // array to track the chat messages
 const chatLogs = [];
+const initialText = document.getElementById("chatbox").innerHTML;
 
 const renderChatbox = () => {
   // get a reference to the chatbox element
@@ -9,7 +10,7 @@ const renderChatbox = () => {
 
   // copy the latest set of messages, then reverses the new
   // array and takes the first 20 elements
-  const recentMessages = [...chatLogs].reverse().slice(0, 20);
+  const recentMessages = [...chatLogs].slice(0, 20);
   /**
    * this one liner statement would be equivalent to:
    * var recentMessages = chatLog.slice();
@@ -23,14 +24,16 @@ const renderChatbox = () => {
   // create a chat item div element
   for (const message of recentMessages) {
     const markup = `
-      <div class="chat-item chat-item-bot">${message.bot.replyMsg}</div>
-      <div class="chat-item chat-item-user">${message.user.inputMsg}</div>
+    <div class="chat-item chat-item-user">${message.user.inputMsg}</div>
+    <div class="chat-item chat-item-bot">${message.bot.replyMsg}</div>
     `;
     chatboxHTML += markup;
   }
 
   // set the inner HTML
-  chatboxEl.innerHTML = chatboxHTML;
+  chatboxEl.innerHTML = initialText + chatboxHTML;
+
+  chatboxEl.scrollTop = chatboxEl.scrollHeight - chatboxEl.clientHeight;
 };
 
 // form submit handler
