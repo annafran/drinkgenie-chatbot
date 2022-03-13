@@ -36,7 +36,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: Bob
-* Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? I've already had a few myself toooodayyyyyy."
 * Input: "yes"
 * Output: "Oh you are ready to party Bob! You are my type of person. Do you like the feeling of bubbles in your mouth?"
 * Input: "yes"
@@ -50,7 +50,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: Bob
-* Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? I've already had a few myself toooodayyyyyy."
 * Input: "yes"
 * Output: "Oh you are ready to party Bob! You are my type of person. Do you like the feeling of bubbles in your mouth?"
 * Input: "yes"
@@ -64,7 +64,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: Bob
-* Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? I've already had a few myself toooodayyyyyy."
 * Input: "yes"
 * Output: "Oh you are ready to party Bob! You are my type of person. Do you like the feeling of bubbles in your mouth?"
 * Input: "yes"
@@ -76,7 +76,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: Mary
-* Output: "Hola Mary, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Output: "Hola Mary, sit back and relaaaax! Would you like an alcoholololololic tipple? I've already had a few myself toooodayyyyyy."
 * Input: "yes"
 * Output: "Oh you are ready to party Mary! You are my type of person. Do you like the feeling of bubbles in your mouth?"
 * Input: "no"
@@ -88,7 +88,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: Mary
-* Output: "Hola Mary, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Output: "Hola Mary, sit back and relaaaax! Would you like an alcoholololololic tipple? I've already had a few myself toooodayyyyyy."
 * Input: "yes"
 * Output: "Oh you are ready to party Mary! You are my type of person. Do you like the feeling of bubbles in your mouth?"
 * Input: "no"
@@ -102,7 +102,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: Mary
-* Output: "Hola Mary, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Output: "Hola Mary, sit back and relaaaax! Would you like an alcoholololololic tipple? I've already had a few myself toooodayyyyyy."
 * Input: "yes"
 * Output: "Oh you are ready to party Mary! You are my type of person. Do you like the feeling of bubbles in your mouth?"
 * Input: "no"
@@ -116,7 +116,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: "Anna"
-* Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? I've already had a few myself toooodayyyyyy."
 * Input: "no"
 * Output: "Aren't you boring! Not in the mood to party Anna? Are you feeling cold?"
 * Input: "yes"
@@ -128,7 +128,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: "Anna"
-* Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? I've already had a few myself toooodayyyyyy."
 * Input: "no"
 * Output: "Aren't you boring! Not in the mood to party Anna? Are you feeling cold?"
 * Input: "yes"
@@ -140,7 +140,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: "Anna"
-* Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? I've already had a few myself toooodayyyyyy."
 * Input: "no"
 * Output: "Aren't you boring! Not in the mood to party Anna? Are you feeling cold?"
 * Input: "no"
@@ -152,7 +152,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: "Anna"
-* Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? I've already had a few myself toooodayyyyyy."
 * Input: "no"
 * Output: "Aren't you boring! Not in the mood to party Anna? Are you feeling cold?"
 * Input: "no"
@@ -164,17 +164,17 @@ The chatbot will also respond to two instructions from the customer at any stage
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: "Bob"
-* Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? I've already had a few myself toooodayyyyyy."
 * Input: "restart"
 * Output: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * * Input: "Anna"
-* Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? I've already had a few myself toooodayyyyyy."
 
 **Test 12**
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: "Anna"
-* Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? I've already had a few myself toooodayyyyyy."
 * Input: "random"
 * Output: "Bloody Bob"
   
@@ -182,7 +182,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: "Bob"
-* Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? I've already had a few myself toooodayyyyyy."
 * Input: "really?"
 * Output: "Ohoh that answer didn't make sense to me. I think you have already had too much to drink! Make sure you answer with one of the valid options or type restart."
 
@@ -190,7 +190,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: Bob
-* Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? I've already had a few myself toooodayyyyyy."
 * Input: "YEAH"
 * Output: "Oh you are ready to party Bob! You are my type of person. Do you like the feeling of bubbles in your mouth?"
 * Input: "Y"
@@ -204,7 +204,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: "Anna"
-* Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today."
+* Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? I've already had a few myself toooodayyyyyy."
 * Input: "Nup"
 * Output: "Aren't you boring! Not in the mood to party Anna? Are you feeling cold?"
 * Input: "yes"

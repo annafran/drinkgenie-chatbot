@@ -21,6 +21,7 @@ const isNegativeAnswers = ["no", "n", "nup", "nah", "nope"];
 
 const getBotReply = (msg) => {
   const msgLowerCase = msg.toLowerCase();
+
   let affirmativeMsg;
   if (isAffirmativeAnswers.includes(msgLowerCase)) {
     affirmativeMsg = true;
@@ -35,7 +36,7 @@ const getBotReply = (msg) => {
     rememberedName = true;
     userName = msg;
     myLevel = 2;
-    return `Hola ${userName}, sit back and relaaaax! Would you like an alcoholololololic tipple? Oh sorry amigo, I've already had a few myself today.`;
+    return `Hola ${userName}, sit back and relaaaax! Would you like an alcoholololololic tipple? I've already had a few myself toooodayyyyyy.`;
   }
 
   if (rememberedName && msg === "restart" && myLevel > 1) {
@@ -49,7 +50,25 @@ const getBotReply = (msg) => {
   if (rememberedName && msg === "random" && myLevel > 1) {
     const randomDrink =
       drinkOptions[Math.floor(Math.random() * drinkOptions.length)];
-    return `Here's a ${randomDrink}. If you want to order again, just type restart or random.`;
+    return `Here's a ${randomDrink}. If you want to order again, just type <em>restart</em> or <em>random</em>.`;
+  }
+
+  if (rememberedName && msg === "jukebox" && myLevel > 1) {
+    const playMusic = function () {
+      const myAudio = document.getElementById("bar-music");
+      myAudio.play();
+    };
+    playMusic();
+    return `Here is a bit of bar ambience.  If it gets too noisy, just type <em>stop</em> at anytime. Let's continue with your drink order...what was your answer to my last question? Otherwise type <em>restart</em> and we can order again from scratch.`;
+  }
+
+  if (rememberedName && msg === "stop" && myLevel > 1) {
+    const stopMusic = function () {
+      const myAudio = document.getElementById("bar-music");
+      myAudio.pause();
+    };
+    stopMusic();
+    return `I agree that it got pretty noisy in here! Let's continue with your drink order...what was your answer to my last question? Otherwise type <em>restart</em> and we can order again from scratch.`;
   }
 
   if (myLevel === 2 && rememberedName) {
@@ -91,11 +110,11 @@ const getBotReply = (msg) => {
     }
     if (msgLowerCase === "sweet" && path === 1) {
       myLevel = 5;
-      return "Ok sweetie I'll prepare you a mimosa, light and fruity just like you. Enjoy your drink and if you want another one, just type restart.";
+      return `Ok sweetie I'll prepare you a mimosa, light and fruity just like you. Enjoy your drink and if you want another one, just type <em>restart</em>.`;
     }
     if (affirmativeMsg && path === 1) {
       myLevel = 5;
-      return "Alcohol prior to midday - you must be Spanish! We will have to get you a vermut with some tapas. If that doesn't quench your thirst enough, just type restart and order again.";
+      return `Alcohol prior to midday - you must be Spanish! We will have to get you a vermut with some tapas. If that doesn't quench your thirst enough, just type <em>restart</em> and order again.`;
     }
     if (negativeMsg && path === 1) {
       myLevel = 5;
@@ -103,41 +122,41 @@ const getBotReply = (msg) => {
     }
     if (affirmativeMsg && path === 2.1) {
       myLevel = 5;
-      return "Let's quickly get a triple shot hot coffee into you before you fade away on me. If the 3 shots don't revive you and you need another, just type restart.";
+      return `Let's quickly get a triple shot hot coffee into you before you fade away on me. If the 3 shots don't revive you and you need another, just type <em>restart</em>.`;
     }
     if (negativeMsg && path === 2.1) {
       myLevel = 5;
-      return `So your batteries are already charged today ${userName}.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type restart`;
+      return `So your batteries are already charged today ${userName}.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type <em>restart</em>`;
     }
     if (affirmativeMsg && path === 2.2) {
       myLevel = 5;
-      return `Sorry ${userName}, no fun drinks for you. I'll get you a water with cucumber.  I bet you regret your answer now huh! Enjoy your water and if you are still thirsty, just type restart.`;
+      return `Sorry ${userName}, no fun drinks for you. I'll get you a water with cucumber.  I bet you regret your answer now huh! Enjoy your water and if you are still thirsty, just type <em>restart</em>.`;
     }
     if (negativeMsg && path === 2.2) {
       myLevel = 5;
-      return "Good answer. You can have the fat option - an iced chocolate with an extra serving of cream on top. I'll be hanging out here so if you want another beverage just type restart.";
+      return `Good answer. You can have the fat option - an iced chocolate with an extra serving of cream on top. I'll be hanging out here so if you want another beverage just type <em>restart</em>.`;
     }
   }
   if (myLevel === 5 && rememberedName) {
     if (msgLowerCase === "dark" && path === 1) {
       myLevel = 6;
-      return "Time for a Guinness.  This is a full meal in a glass! Be careful it will go straight to your head. Enjoy your drink and if you want another one, just type restart.";
+      return `Time for a Guinness.  This is a full meal in a glass! Be careful it will go straight to your head. Enjoy your drink and if you want another one, just type <em>restart</em>.`;
     }
     if (msgLowerCase === "light" && path === 1) {
       myLevel = 6;
-      return "So you are a bit of a softie. I have the perfect hazy IPA for you. This is a craft beer from NZ. Enjoy your beer and if you want another drink, just type restart.";
+      return `So you are a bit of a softie. I have the perfect hazy IPA for you. This is a craft beer from NZ. Enjoy your beer and if you want another drink, just type <em>restart</em>.`;
     }
     if (msgLowerCase === "red" && path === 1) {
       myLevel = 6;
-      return "Red red wiiiiineee, stay close to meeeee! This Argentinean Malbec is my favourite. Enjoy your vino tinto and if you want another one, just type restart.";
+      return `Red red wiiiiineee, stay close to meeeee! This Argentinean Malbec is my favourite. Enjoy your vino tinto and if you want another one, just type <em>restart</em>.`;
     }
     if (msgLowerCase === "white" && path === 1) {
       myLevel = 6;
-      return "Fresh and fruity, I do love myself a pinot gris.  Give this one from Waiheke Island a swirl in your mouth. If you need another just type restart.";
+      return `Fresh and fruity, I do love myself a pinot gris.  Give this one from Waiheke Island a swirl in your mouth. If you need another just type <em>restart</em>.`;
     }
   }
 
-  return "Ohoh that answer didn't make sense to me. I think you have already had too much to drink! Make sure you answer with one of the valid options or type restart.";
+  return `Ohoh that answer didn't make sense to me. I think you have already had too much to drink! Make sure you answer with one of the valid options or type <em>restart</em>.`;
 };
 
 export { getBotReply };
