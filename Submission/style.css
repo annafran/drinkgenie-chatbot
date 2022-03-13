@@ -59,12 +59,13 @@ body {
 .legend-container {
   grid-column: 1 / 2;
   text-align: left;
-  padding: 1rem;
   border-radius: 0px 10px 10px 10px;
   background-color: #fec5bb;
+  padding: 0.5rem;
 }
 
-.legend {
+.legend-list {
+  /* list-style: none; */
   font-size: 1.2em;
   margin: 0;
 }
