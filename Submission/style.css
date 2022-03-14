@@ -61,11 +61,11 @@ body {
 
 .heading-container {
   margin-bottom: 1rem;
-  border-radius: 0px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
   background-color: #34a0a4;
   padding: 0.5rem;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .legend-heading {
@@ -75,6 +75,7 @@ body {
   padding: 0.5rem;
   text-align: center;
   color: white;
+  align-self: center;
 }
 
 .legend-container {
@@ -82,7 +83,7 @@ body {
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: left;
-  border-radius: 0px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
   background-color: #34a0a4;
   color: white;
   padding-top: 0.5rem;
@@ -105,7 +106,7 @@ body {
   height: min-content;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-gap: 0.5rem;
+  grid-gap: 1rem;
 }
 
 .chat-input {
@@ -206,20 +207,27 @@ body {
     grid-gap: 2rem;
   }
 
+  .heading-container {
+    margin-bottom: 0;
+  }
+
   .legend-container {
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
-    border-radius: 0px 10px 10px 10px;
-    background-color: none;
+    background: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
   }
 
   .legend-subbox {
-    border-radius: 0px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
     background-color: #34a0a4;
     color: white;
     padding: 0.5rem 2rem;
+    margin: 0;
   }
 
   .legend-subbox-1 {
