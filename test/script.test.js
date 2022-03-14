@@ -462,15 +462,15 @@ describe("getBotReply", () => {
     expect(botReply4).toEqual(expectedReply4);
   });
 
-  it("should provide the correct answers for the jukebox or stop commands, and then continue with the previous path", () => {
+  it("should provide the correct answers for the music or stop commands, and then continue with the previous path", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Bob
     const botReply1 = getBotReply("Bob");
     // * Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? I've already had a few myself toooodayyyyyy."
     const expectedReply1 =
       "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? I've already had a few myself toooodayyyyyy.";
-    // * Input: "jukebox"
-    const botReply2 = getBotReply("jukebox");
+    // * Input: "music"
+    const botReply2 = getBotReply("music");
     // * Output: `Here is a bit of bar ambience.  If it gets too noisy, just type <em>stop</em> at anytime. Let's continue with your drink order...what was your answer to my last question? Otherwise type <em>restart</em> and we can order again from scratch.`
     const expectedReply2 = `Here is a bit of bar ambience.  If it gets too noisy, just type <em>stop</em> at anytime. Let's continue with your drink order...what was your answer to my last question? Otherwise type <em>restart</em> and we can order again from scratch.`;
     // * Input: "no"

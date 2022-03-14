@@ -218,12 +218,12 @@ The chatbot will also respond to two instructions from the customer at any stage
 * Input: "N"
 * Output: "So your batteries are already charged today Anna.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type restart."
 
-**Path for jukebox and stop commands**
+**Path for music and stop commands**
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: "Bob"
 * Output: "Hola Bob, sit back and relaaaax! Would you like an alcoholololololic tipple? I've already had a few myself toooodayyyyyy."
-* Input: "jukebox"
+* Input: "music"
 * Output: "Here is a bit of bar ambience.  If it gets too noisy, just type stop at anytime. Let's continue with your drink order...what was your answer to my last question? Otherwise type restart and we can order again from scratch."
 * Input: "no"
 * Output: "Aren't you boring! Not in the mood to party Bob? Are you feeling cold?"

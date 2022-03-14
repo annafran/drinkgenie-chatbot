@@ -53,7 +53,7 @@ const getBotReply = (msg) => {
     return `Here's a ${randomDrink}. If you want to order again, just type <em>restart</em> or <em>random</em>.`;
   }
 
-  if (rememberedName && msg === "jukebox" && myLevel > 1) {
+  if (rememberedName && msg === "music" && myLevel > 1) {
     if (document) {
       const playMusic = () => {
         const myAudio = document.getElementById("bar-music");
