@@ -6,22 +6,27 @@ body {
 }
 
 .chatbot-interface {
-  margin: 2rem auto;
   display: grid;
   grid-template-columns: 1fr;
-  border-radius: 0.125rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 70%;
   padding: 2rem;
   background-color: #abd1c6;
 }
 
+.main-heading-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .heading {
+  grid-column: 2 / 3;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  margin-right: 3rem;
   font-family: "Sansita Swashed", cursive;
-  font-size: 4rem;
+  font-size: 3rem;
   color: #997b66;
+  text-align: right;
+  width: 50%;
 }
 
 .conversation-container {
@@ -29,8 +34,11 @@ body {
 }
 
 .genie-img {
-  max-width: 50%;
+  max-width: 20%;
   height: auto;
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
 }
 
 .chatbox {
@@ -99,6 +107,13 @@ body {
   margin-left: 1rem;
 }
 
+.btn-chat-send:hover,
+.btn-chat-send:focus {
+  cursor: pointer;
+  background-color: hsl(9, 48%, 95%);
+  border: 1px solid #fec5bb;
+}
+
 .chat-item {
   color: black;
 }
@@ -127,6 +142,27 @@ body {
 }
 
 @media only screen and (min-width: 48rem) {
+  .chatbot-interface {
+    margin: 2rem auto;
+    border-radius: 0.125rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 70%;
+  }
+
+  .main-heading-container {
+    display: block;
+  }
+
+  .heading {
+    font-size: 4rem;
+    text-align: left;
+  }
+
+  .genie-img {
+    max-width: 100%;
+    position: static;
+  }
+
   .conversation-container {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -163,8 +199,5 @@ body {
   }
   .btn-chat-send {
     grid-column: 2 / 3;
-  }
-  .genie-img {
-    max-width: 100%;
   }
 }
