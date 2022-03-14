@@ -21,7 +21,7 @@
       <h1 class="heading">Drink Genie</h1>
       <div class="conversation-container">
         <div class="bot-face">
-          <img class="robot-img" src="images/genie.png" alt="A robot" />
+          <img class="genie-img" src="images/genie.png" alt="A genie" />
         </div>
         <div id="chatbox" class="chatbox">
           <div class="chat-item chat-item-bot">
@@ -31,12 +31,6 @@
         </div>
       </div>
       <div class="chat-container">
-        <div class="legend-container">
-          <ul class="legend-list">
-            <li><em>random</em> - I'll whip you up a specialty</li>
-            <li><em>jukebox</em> - I'll put on some bar ambience</li>
-          </ul>
-        </div>
         <form id="chat-form" class="chat-form">
           <input
             id="chat-input"
@@ -49,6 +43,16 @@
             <img class="btn-image" src="./images/lamp.png" />
           </button>
         </form>
+      </div>
+      <div class="legend-grid">
+        <ul class="legend-container">
+          <li class="legend-item legend-item-random">
+            <em>random</em> - I'll whip you up a specialty
+          </li>
+          <li class="legend-item legend-item-random">
+            <em>jukebox</em> - I'll put on some bar ambience
+          </li>
+        </ul>
       </div>
       <audio
         id="bar-music"
