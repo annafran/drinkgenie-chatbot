@@ -32,7 +32,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 -----------------
 ## Test scenarios
 
-**Test 1**
+**Path for Guinness**
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: Bob
@@ -46,7 +46,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 * Input: "dark"
 * Output: "Time for a Guinness.  This is a full meal in a glass! Be careful it will go straight to your head. Enjoy your drink and if you want another one, just type restart."
 
-**Test 2**
+**Path for Hazy IPA**
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: Bob
@@ -60,7 +60,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 * Input: "light"
 * Output: "So you are a bit of a softie. I have the perfect hazy IPA for you. This is a craft beer from NZ. Enjoy your beer and if you want another drink, just type restart."
 
-**Test 3**
+**Path for Mimosa**
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: Bob
@@ -72,7 +72,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 * Input: "sweet"
 * Output: "Ok sweetie I'll prepare you a mimosa, light and fruity just like you. Enjoy your drink and if you want another one, just type restart."
 
-**Test 4**
+**Path for Vermut**
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: Mary
@@ -84,7 +84,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 * Input "yes"
 * Output: "Alcohol prior to midday - you must be Spanish! We will have to get you a vermut with some tapas. If that doesn't quench your thirst enough, just type restart and order again."
 
-**Test 5**
+**Path for Red Wine**
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: Mary
@@ -98,7 +98,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 * Input: "red"
 * Output: "Red red wiiiiineee, stay close to meeeee! This Argentinean Malbec is my favourite. Enjoy your vino tinto and if you want another one, just type restart."
 
-**Test 6**
+**Path for White Wine**
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: Mary
@@ -112,7 +112,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 * Input: "white"
 * Output: "Fresh and fruity, I do love myself a pinot gris.  Give this one from Waiheke Island a swirl in your mouth. If you need another just type restart."
 
-**Test 7**  
+**Path for Coffee**  
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: "Anna"
@@ -124,7 +124,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 * Input: "yes"
 * Output: "Let's quickly get a triple shot hot coffee into you before you fade away on me. If the 3 shots don't revive you and you need another, just type restart."
 
-**Test 8**  
+**Path for Chamomile Tea**  
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: "Anna"
@@ -136,7 +136,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 * Input: "no"
 * Output: "So your batteries are already charged today Anna.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type restart."
 
-**Test 9**  
+**Path for Water with Cucumber**  
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: "Anna"
@@ -148,7 +148,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 * Input: "yes"
 * Output: "Sorry Anna, no fun drinks for you. I'll get you a water with cucumber.  I bet you regret your answer now huh! Enjoy your water and if you are still thirsty, just type restart."
 
-**Test 10**  
+**Path for Iced Chocolate**  
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: "Anna"
@@ -160,7 +160,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 * Input: "no"
 * Output: "Good answer. You can have the fat option - an iced chocolate with an extra serving of cream on top. I'll be hanging out here so if you want another beverage just type restart."
 
-**Test 11**
+**Path for restart**
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: "Bob"
@@ -170,7 +170,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 * * Input: "Anna"
 * Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? I've already had a few myself toooodayyyyyy."
 
-**Test 12**
+**Path for random**
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: "Anna"
@@ -178,7 +178,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 * Input: "random"
 * Output: "Bloody Bob"
   
-**Test 13**
+**Path if incoherent answer**
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: "Bob"
@@ -186,7 +186,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 * Input: "really?"
 * Output: "Ohoh that answer didn't make sense to me. I think you have already had too much to drink! Make sure you answer with one of the valid options or type restart."
 
-**Test 14**
+**Path for yes variations**
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: Bob
@@ -200,7 +200,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 * Input: "Dark"
 * Output: "Time for a Guinness.  This is a full meal in a glass! Be careful it will go straight to your head. Enjoy your drink and if you want another one, just type restart."
 
-**Test 15**  
+**Path for no variations**  
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: "Anna"
@@ -212,7 +212,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 * Input: "N"
 * Output: "So your batteries are already charged today Anna.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type restart."
 
-**Test 16**
+**Path for jukebox**
 
 * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
 * Input: "Bob"

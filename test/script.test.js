@@ -488,6 +488,10 @@ describe("getBotReply", () => {
     expect(botReply4).toEqual(expectedReply4);
     expect(botReply5).toEqual(expectedReply5);
 
+    /**
+     * @jest-environment jsdom
+     */
+
     const myAudio = document.getElementById("bar-music");
     expect(myAudio).not.toBeNull();
   });

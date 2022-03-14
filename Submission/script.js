@@ -54,20 +54,24 @@ const getBotReply = (msg) => {
   }
 
   if (rememberedName && msg === "jukebox" && myLevel > 1) {
-    const playMusic = () => {
-      const myAudio = document.getElementById("bar-music");
-      myAudio.play();
-    };
-    playMusic();
+    if (document) {
+      const playMusic = () => {
+        const myAudio = document.getElementById("bar-music");
+        myAudio?.play();
+      };
+      playMusic();
+    }
     return `Here is a bit of bar ambience.  If it gets too noisy, just type <em>stop</em> at anytime. Let's continue with your drink order...what was your answer to my last question? Otherwise type <em>restart</em> and we can order again from scratch.`;
   }
 
   if (rememberedName && msg === "stop" && myLevel > 1) {
-    const stopMusic = () => {
-      const myAudio = document.getElementById("bar-music");
-      myAudio.pause();
-    };
-    stopMusic();
+    if (document) {
+      const stopMusic = () => {
+        const myAudio = document.getElementById("bar-music");
+        myAudio?.pause();
+      };
+      stopMusic();
+    }
     return `I agree that it got pretty noisy in here! Let's continue with your drink order...what was your answer to my last question? Otherwise type <em>restart</em> and we can order again from scratch.`;
   }
 
