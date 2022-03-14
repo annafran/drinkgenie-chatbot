@@ -12,6 +12,7 @@ beforeEach(() => {
 });
 
 describe("getBotReply", () => {
+  // **Path for checking name**
   it("should reply with greeting the user by their name", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Bob
@@ -22,6 +23,7 @@ describe("getBotReply", () => {
     expect(botReply1).toEqual(expectedReply1);
   });
 
+  //   **Path for guinness**
   it("should greet the user by their name, then provide the correct answers for the yes, yes, bitter, dark path", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Bob
@@ -55,7 +57,7 @@ describe("getBotReply", () => {
     expect(botReply4).toEqual(expectedReply4);
     expect(botReply5).toEqual(expectedReply5);
   });
-
+  //   **Path for Hazy IPA**
   it("should greet the user by their name, then provide the correct answers for the yes, yes, bitter, light path", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Bob
@@ -89,7 +91,7 @@ describe("getBotReply", () => {
     expect(botReply4).toEqual(expectedReply4);
     expect(botReply5).toEqual(expectedReply5);
   });
-
+  //   **Path for Mimosa**
   it("should greet the user by their name, then provide the correct answers for the yes, yes, sweet path", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Bob
@@ -117,7 +119,7 @@ describe("getBotReply", () => {
     expect(botReply3).toEqual(expectedReply3);
     expect(botReply4).toEqual(expectedReply4);
   });
-
+  //   **Path for vermut**
   it("should greet the user by their name, then provide the correct answers for the yes, no, yes path", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Mary
@@ -145,7 +147,7 @@ describe("getBotReply", () => {
     expect(botReply3).toEqual(expectedReply3);
     expect(botReply4).toEqual(expectedReply4);
   });
-
+  //   **Path for red wine**
   it("should greet the user by their name, then provide the correct answers for the yes, no, no, red path", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Mary
@@ -179,7 +181,7 @@ describe("getBotReply", () => {
     expect(botReply4).toEqual(expectedReply4);
     expect(botReply5).toEqual(expectedReply5);
   });
-
+  //   **Path for white wine**
   it("should greet the user by their name, then provide the correct answers for the yes, no, no, white path", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Mary
@@ -213,7 +215,7 @@ describe("getBotReply", () => {
     expect(botReply4).toEqual(expectedReply4);
     expect(botReply5).toEqual(expectedReply5);
   });
-
+  //   **Path for coffee**
   it("should greet the user by their name, then provide the correct answers for the no, yes, yes path", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Anna
@@ -241,7 +243,7 @@ describe("getBotReply", () => {
     expect(botReply3).toEqual(expectedReply3);
     expect(botReply4).toEqual(expectedReply4);
   });
-
+  //   **Path for chamomile tea**
   it("should greet the user by their name, then provide the correct answers for the no, yes, no path", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Anna
@@ -270,7 +272,7 @@ describe("getBotReply", () => {
     expect(botReply3).toEqual(expectedReply3);
     expect(botReply4).toEqual(expectedReply4);
   });
-
+  //   **Path for water with cucumber**
   it("should greet the user by their name, then provide the correct answers for the no, no, yes path", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Anna
@@ -298,7 +300,7 @@ describe("getBotReply", () => {
     expect(botReply3).toEqual(expectedReply3);
     expect(botReply4).toEqual(expectedReply4);
   });
-
+  //   **Path for iced chocolate**
   it("should greet the user by their name, then provide the correct answers for the no, no, no path", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Anna
@@ -326,7 +328,7 @@ describe("getBotReply", () => {
     expect(botReply3).toEqual(expectedReply3);
     expect(botReply4).toEqual(expectedReply4);
   });
-
+  //   **Path for restart**
   it("should <em>restart</em> the chatbot and have correct greeting for a different user name", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Bob
@@ -349,7 +351,7 @@ describe("getBotReply", () => {
     expect(botReply2).toEqual(expectedReply2);
     expect(botReply3).toEqual(expectedReply3);
   });
-
+  //   **Path for random command**
   it("should provide a random drink option when the user types random", () => {
     //   * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     //   * Input: "Anna"
@@ -375,7 +377,7 @@ describe("getBotReply", () => {
     expect(botReply1).toEqual(expectedReply1);
     expect(containsSome(expectedReply2, botReply2)).toBeTruthy();
   });
-
+  //   **Path for incoherent answer**
   it("should provide instructions to reenter input if the bot doesn't understand", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Bob
@@ -392,7 +394,7 @@ describe("getBotReply", () => {
     expect(botReply1).toEqual(expectedReply1);
     expect(botReply2).toEqual(expectedReply2);
   });
-
+  //   **Path for yes variations**
   it("should provide the correct answers for the YEAH, Y, bitter, Dark path (capitilisation and variation of yes cases)", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Bob
@@ -426,7 +428,7 @@ describe("getBotReply", () => {
     expect(botReply4).toEqual(expectedReply4);
     expect(botReply5).toEqual(expectedReply5);
   });
-
+  //   **Path for no variations**
   it("should provide the correct answers for the Nup, yes, N path", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Anna
