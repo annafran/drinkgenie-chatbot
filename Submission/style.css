@@ -71,7 +71,7 @@ body {
 .legend-heading {
   font-family: "Sansita Swashed", cursive;
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding: 0.5rem;
   text-align: center;
   color: white;
@@ -104,7 +104,7 @@ body {
   font-size: 1rem;
   font-family: "Fredoka", sans-serif;
   border: none;
-  padding: 0.5rem;
+  padding: 0.8rem;
   border-radius: 0.4rem;
   grid-column: 1 / 2;
 }
@@ -198,6 +198,26 @@ body {
   }
 
   .legend-container {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    border-radius: 0px 10px 10px 10px;
+    background-color: none;
+  }
+
+  .legend-subbox {
+    border-radius: 0px 10px 10px 10px;
+    background-color: #34a0a4;
+    color: white;
+    padding: 0.5rem 2rem;
+  }
+
+  .legend-subbox-1 {
+    grid-column: 1 / 2;
+  }
+
+  .legend-subbox-2 {
     grid-column: 2 / 3;
   }
 
