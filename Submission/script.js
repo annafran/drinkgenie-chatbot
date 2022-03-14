@@ -18,6 +18,7 @@ const drinkOptions = [
 ];
 const isAffirmativeAnswers = ["yes", "yeah", "yup", "yea", "y", "yep"];
 const isNegativeAnswers = ["no", "n", "nup", "nah", "nope"];
+const commands = ["music", "stop", "restart", "random"];
 
 const getBotReply = (msg) => {
   const msgLowerCase = msg.toLowerCase();
@@ -32,14 +33,19 @@ const getBotReply = (msg) => {
     negativeMsg = true;
   }
 
-  if (rememberedName === false && myLevel === 1 && path === 0) {
+  if (
+    rememberedName === false &&
+    commands.includes(msgLowerCase) === false &&
+    myLevel === 1 &&
+    path === 0
+  ) {
     rememberedName = true;
     userName = msg;
     myLevel = 2;
     return `Hola ${userName}, sit back and relaaaax! Would you like an alcoholololololic tipple? I've already had a few myself toooodayyyyyy.`;
   }
 
-  if (rememberedName && msgLowerCase === "restart" && myLevel > 1) {
+  if (msgLowerCase === "restart") {
     myLevel = 1;
     path = 0;
     rememberedName = false;
@@ -47,13 +53,13 @@ const getBotReply = (msg) => {
     return "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?";
   }
 
-  if (rememberedName && msgLowerCase === "random" && myLevel > 1) {
+  if (msgLowerCase === "random") {
     const randomDrink =
       drinkOptions[Math.floor(Math.random() * drinkOptions.length)];
     return `Here's a ${randomDrink}. If you want to order again, just type <em>restart</em> or <em>random</em>.`;
   }
 
-  if (rememberedName && msgLowerCase === "music" && myLevel > 1) {
+  if (msgLowerCase === "music") {
     if (document) {
       const playMusic = () => {
         const myAudio = document.getElementById("bar-music");
@@ -64,7 +70,7 @@ const getBotReply = (msg) => {
     return `Here is a bit of bar ambience.  If it gets too noisy, just type <em>stop</em> at anytime. Let's continue with your drink order...what was your answer to my last question? Otherwise type <em>restart</em> and we can order again from scratch.`;
   }
 
-  if (rememberedName && msgLowerCase === "stop" && myLevel > 1) {
+  if (msgLowerCase === "stop") {
     if (document) {
       const stopMusic = () => {
         const myAudio = document.getElementById("bar-music");

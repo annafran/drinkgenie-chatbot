@@ -499,4 +499,24 @@ describe("getBotReply", () => {
       expect(myAudio).not.toBeNull();
     }
   });
+
+  it("should not call the user by the name 'random' if they enter this command at the start", () => {
+    //   * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+    //   * Input: "random"
+    const botReply1 = getBotReply("random");
+    //   * Output: "Bloody Bob" || "Jam n Tonic" || "Tequila Storm" || "Slime and Soda" || "Feeling Hot Hot Hot Chocolate";
+    const expectedReply1 = [
+      "Bloody Bob",
+      "Jam n Tonic",
+      "Tequila Storm",
+      "Slime and Soda",
+      "Feeling Hot Hot Hot Chocolate",
+    ];
+
+    const containsSome = (drinkOptions, botReply) => {
+      return drinkOptions.some((randomDrink) => botReply.includes(randomDrink));
+    };
+
+    expect(containsSome(expectedReply1, botReply1)).toBeTruthy();
+  });
 });

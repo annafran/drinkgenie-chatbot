@@ -182,7 +182,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 * Input: "Anna"
 * Output: "Hola Anna, sit back and relaaaax! Would you like an alcoholololololic tipple? I've already had a few myself toooodayyyyyy."
 * Input: "random"
-* Output: "Bloody Bob"
+* Output: One of the options in the list ["Bloody Bob", "Jam n Tonic", "Tequila Storm", "Slime and Soda", "Feeling Hot Hot Hot Chocolate"]
   
 **Path for incoherent answer**
 
@@ -231,3 +231,9 @@ The chatbot will also respond to two instructions from the customer at any stage
 * Output: "I agree that it got pretty noisy in here! Let's continue with your drink order...what was your answer to my last question? Otherwise type restart and we can order again from scratch."
 * Input: "yes"
 * Output: "Cold and not in the mood to party.  Sounds like a dire situation.  Are you low on energy?"
+
+**Path for typing random command at the beginning**
+
+* Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+* Input: "random"
+* Output: One of the options in the list ["Bloody Bob", "Jam n Tonic", "Tequila Storm", "Slime and Soda", "Feeling Hot Hot Hot Chocolate"]
