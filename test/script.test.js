@@ -333,7 +333,7 @@ describe("getBotReply", () => {
     expect(botReply4).toEqual(expectedReply4);
   });
   //   **Path for restart**
-  it("should <em>restart</em> the chatbot and have correct greeting for a different user name", () => {
+  it("should restart the chatbot and have correct greeting for a different user name", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Bob
     const botReply1 = getBotReply("Bob");
