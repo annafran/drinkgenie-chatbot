@@ -1,6 +1,7 @@
 // Dynamically import modules, so they can be reset between test runs
 // https://github.com/facebook/jest/issues/3236
 // https://www.npmjs.com/package/babel-plugin-dynamic-import-node
+
 let getBotReply;
 
 beforeEach(() => {
@@ -455,7 +456,7 @@ describe("getBotReply", () => {
     expect(botReply4).toEqual(expectedReply4);
   });
 
-  it("should reply with the correct answer if the user enters jukebox, then continue with the correct path, then the correct answer if the user enters stop", () => {
+  it("should provide the correct answers for the jukebox or stop commands, and then continue with the previous path", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Bob
     const botReply1 = getBotReply("Bob");
@@ -476,15 +477,18 @@ describe("getBotReply", () => {
     // * Output: `I agree that it got pretty noisy in here! Let's continue with your drink order...what was your answer to my last question? Otherwise type <em>restart</em> and we can order again from scratch.`
     const expectedReply4 = `I agree that it got pretty noisy in here! Let's continue with your drink order...what was your answer to my last question? Otherwise type <em>restart</em> and we can order again from scratch.`;
     // * Input: "restart"
-    const botReply5 = getBotReply("restart");
-    // * Output: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+    const botReply5 = getBotReply("yes");
+    // * Output: "Cold and not in the mood to party.  Sounds like a dire situation.  Are you low on energy?"
     const expectedReply5 =
-      "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?";
+      "Cold and not in the mood to party.  Sounds like a dire situation.  Are you low on energy?";
 
     expect(botReply1).toEqual(expectedReply1);
     expect(botReply2).toEqual(expectedReply2);
     expect(botReply3).toEqual(expectedReply3);
     expect(botReply4).toEqual(expectedReply4);
     expect(botReply5).toEqual(expectedReply5);
+
+    const myAudio = document.getElementById("bar-music");
+    expect(myAudio).not.toBeNull();
   });
 });

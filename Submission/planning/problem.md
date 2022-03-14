@@ -1,13 +1,13 @@
-# "Bar Genie" chatbot
+# "Drink Genie" chatbot
 
 ## Problem statement
 
 
 Create a chatbot that helps the customer decide which drink to order. Use the provided flowchart to build the chatbot.
 
-The chatbot, or Bar Genie, will start by asking the user their name, which will enable the Bar Genie to personalise the rest of the responses. The Bar Genie will ask the user about a specific preference related to drinking or their current feelings, and the user will answer one of two options. The user's answer will trigger the Bar Genie to ask another question, based on the previous answer. The user will continue to provide responses to each question until the chatbot eventually provides the customer with a drink that best suits them. 
+The chatbot, or Drink Genie, will start by asking the user their name, which will enable the Drink enie to personalise the rest of the responses. The Drink Genie will ask the user about a specific preference related to drinking or their current feelings, and the user will answer one of two options. The user's answer will trigger the Drink Genie to ask another question, based on the previous answer. The user will continue to provide responses to each question until the chatbot eventually provides the customer with a drink that best suits them. 
 
-The Bar Genie will recognise if the user doesn't enter one of the required answers at each stage, letting them know that they need to try and enter their answer correctly again. 
+The Drink Genie will recognise if the user doesn't enter one of the required answers at each stage, letting them know that they need to try and enter their answer correctly again. 
 
 The chatbot will also respond to two instructions from the customer at any stage during the conversation. The first instruction will be to provide the customer with a random drink choice.  The second instruction will be to restart the chatbot to the start. 
 
@@ -27,7 +27,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 
 --------------
 
-![flowchart](bargenie-flowchart.jpg)
+![flowchart](drinkgenie-flowchart.jpg)
 
 -----------------
 ## Test scenarios
@@ -223,5 +223,5 @@ The chatbot will also respond to two instructions from the customer at any stage
 * Output: "Aren't you boring! Not in the mood to party Bob? Are you feeling cold?"
 * Input: "stop"
 * Output: "I agree that it got pretty noisy in here! Let's continue with your drink order...what was your answer to my last question? Otherwise type restart and we can order again from scratch."
-* Input: "restart"
-* Output: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
+* Input: "yes"
+* Output: "Cold and not in the mood to party.  Sounds like a dire situation.  Are you low on energy?"
