@@ -1,3 +1,7 @@
+/**
+ * @jest-environment jsdom
+ */
+
 // Dynamically import modules, so they can be reset between test runs
 // https://github.com/facebook/jest/issues/3236
 // https://www.npmjs.com/package/babel-plugin-dynamic-import-node
@@ -490,11 +494,9 @@ describe("getBotReply", () => {
     expect(botReply4).toEqual(expectedReply4);
     expect(botReply5).toEqual(expectedReply5);
 
-    /**
-     * @jest-environment jsdom
-     */
-
     const myAudio = document.getElementById("bar-music");
-    expect(myAudio).not.toBeNull();
+    if (myAudio) {
+      expect(myAudio).not.toBeNull();
+    }
   });
 });
