@@ -85,7 +85,16 @@ body {
   border-radius: 0px 10px 10px 10px;
   background-color: #34a0a4;
   color: white;
-  padding: 0.5rem 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.legend-subbox-1 {
+  margin-bottom: 0.2rem;
+}
+
+.legend-subbox-2 {
+  margin-top: 0.2rem;
 }
 
 .legend-command {

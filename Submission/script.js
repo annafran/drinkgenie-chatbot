@@ -39,7 +39,7 @@ const getBotReply = (msg) => {
     return `Hola ${userName}, sit back and relaaaax! Would you like an alcoholololololic tipple? I've already had a few myself toooodayyyyyy.`;
   }
 
-  if (rememberedName && msg === "restart" && myLevel > 1) {
+  if (rememberedName && msgLowerCase === "restart" && myLevel > 1) {
     myLevel = 1;
     path = 0;
     rememberedName = false;
@@ -47,13 +47,13 @@ const getBotReply = (msg) => {
     return "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?";
   }
 
-  if (rememberedName && msg === "random" && myLevel > 1) {
+  if (rememberedName && msgLowerCase === "random" && myLevel > 1) {
     const randomDrink =
       drinkOptions[Math.floor(Math.random() * drinkOptions.length)];
     return `Here's a ${randomDrink}. If you want to order again, just type <em>restart</em> or <em>random</em>.`;
   }
 
-  if (rememberedName && msg === "music" && myLevel > 1) {
+  if (rememberedName && msgLowerCase === "music" && myLevel > 1) {
     if (document) {
       const playMusic = () => {
         const myAudio = document.getElementById("bar-music");
@@ -64,7 +64,7 @@ const getBotReply = (msg) => {
     return `Here is a bit of bar ambience.  If it gets too noisy, just type <em>stop</em> at anytime. Let's continue with your drink order...what was your answer to my last question? Otherwise type <em>restart</em> and we can order again from scratch.`;
   }
 
-  if (rememberedName && msg === "stop" && myLevel > 1) {
+  if (rememberedName && msgLowerCase === "stop" && myLevel > 1) {
     if (document) {
       const stopMusic = () => {
         const myAudio = document.getElementById("bar-music");
@@ -130,7 +130,7 @@ const getBotReply = (msg) => {
     }
     if (negativeMsg && path === 2.1) {
       myLevel = 5;
-      return `So your batteries are already charged today ${userName}.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type <em>restart</em>`;
+      return `So your batteries are already charged today ${userName}.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you decide you need another more exciting drink afterwards just type <em>restart</em>`;
     }
     if (affirmativeMsg && path === 2.2) {
       myLevel = 5;

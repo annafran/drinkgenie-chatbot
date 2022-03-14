@@ -140,7 +140,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 * Input: "yes"
 * Output: "Cold and not in the mood to party.  Sounds like a dire situation.  Are you low on energy?"
 * Input: "no"
-* Output: "So your batteries are already charged today Anna.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type restart."
+* Output: "So your batteries are already charged today Anna.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you decide you need another more exciting drink afterwards just type restart."
 
 **Path for water with cucumber**  
 
@@ -216,7 +216,7 @@ The chatbot will also respond to two instructions from the customer at any stage
 * Input: "yes"
 * Output: "Cold and not in the mood to party.  Sounds like a dire situation.  Are you low on energy?"
 * Input: "N"
-* Output: "So your batteries are already charged today Anna.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type restart."
+* Output: "So your batteries are already charged today Anna.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you decide you need another more exciting drink afterwards just type restart."
 
 **Path for music and stop commands**
 

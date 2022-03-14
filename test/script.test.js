@@ -267,9 +267,9 @@ describe("getBotReply", () => {
       "Cold and not in the mood to party.  Sounds like a dire situation.  Are you low on energy?";
     // * Input: "no"
     const botReply4 = getBotReply("no");
-    // * Output: "So your batteries are already charged today Anna.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type <em>restart</em>`
+    // * Output: "So your batteries are already charged today Anna.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you decide you need another more exciting drink afterwards just type <em>restart</em>`
     const expectedReply4 =
-      "So your batteries are already charged today Anna.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type <em>restart</em>";
+      "So your batteries are already charged today Anna.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you decide you need another more exciting drink afterwards just type <em>restart</em>";
 
     expect(botReply1).toEqual(expectedReply1);
     expect(botReply2).toEqual(expectedReply2);
@@ -452,9 +452,9 @@ describe("getBotReply", () => {
       "Cold and not in the mood to party.  Sounds like a dire situation.  Are you low on energy?";
     // * Input: "N"
     const botReply4 = getBotReply("N");
-    // * Output: "So your batteries are already charged today Anna.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type <em><em>restart</em></em>`
+    // * Output: "So your batteries are already charged today Anna.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you decide you need another more exciting drink afterwards just type <em><em>restart</em></em>`
     const expectedReply4 =
-      "So your batteries are already charged today Anna.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you want decide you need another more exciting drink afterwards just type <em>restart</em>";
+      "So your batteries are already charged today Anna.  In that case let's get you a chamomile tea. Not my cup of tea, but suit yourself. If you decide you need another more exciting drink afterwards just type <em>restart</em>";
 
     expect(botReply1).toEqual(expectedReply1);
     expect(botReply2).toEqual(expectedReply2);
