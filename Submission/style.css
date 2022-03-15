@@ -25,7 +25,6 @@ body {
   font-family: "Sansita Swashed", cursive;
   font-size: 3rem;
   color: #997b66;
-  text-align: right;
   width: 50%;
 }
 
@@ -120,10 +119,6 @@ body {
 }
 
 .btn-chat-send {
-  font-size: 1.5em;
-  font-family: "Fredoka", sans-serif;
-  overflow: hidden;
-  text-overflow: ellipsis;
   border: none;
   border-radius: 0.4rem;
   margin-left: 1rem;
