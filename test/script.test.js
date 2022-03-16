@@ -28,7 +28,7 @@ describe("getBotReply", () => {
   });
 
   //   **Path for guinness**
-  it("should greet the user by their name, then provide the correct answers for the yes, yes, bitter, dark path", () => {
+  it("should greet the user by their name, then provide the correct answers for the guinness path (yes, yes, bitter, dark)", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Bob
     const botReply1 = getBotReply("Bob");
@@ -62,7 +62,7 @@ describe("getBotReply", () => {
     expect(botReply5).toEqual(expectedReply5);
   });
   //   **Path for Hazy IPA**
-  it("should greet the user by their name, then provide the correct answers for the yes, yes, bitter, light path", () => {
+  it("should greet the user by their name, then provide the correct answers for the Hazy IPA path (yes, yes, bitter, light)", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Bob
     const botReply1 = getBotReply("Bob");
@@ -96,7 +96,7 @@ describe("getBotReply", () => {
     expect(botReply5).toEqual(expectedReply5);
   });
   //   **Path for Mimosa**
-  it("should greet the user by their name, then provide the correct answers for the yes, yes, sweet path", () => {
+  it("should greet the user by their name, then provide the correct answers for the mimosa path (yes, yes, sweet)", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Bob
     const botReply1 = getBotReply("Bob");
@@ -124,7 +124,7 @@ describe("getBotReply", () => {
     expect(botReply4).toEqual(expectedReply4);
   });
   //   **Path for vermut**
-  it("should greet the user by their name, then provide the correct answers for the yes, no, yes path", () => {
+  it("should greet the user by their name, then provide the correct answers for the vermut path (yes, no, yes)", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Mary
     const botReply1 = getBotReply("Mary");
@@ -152,7 +152,7 @@ describe("getBotReply", () => {
     expect(botReply4).toEqual(expectedReply4);
   });
   //   **Path for red wine**
-  it("should greet the user by their name, then provide the correct answers for the yes, no, no, red path", () => {
+  it("should greet the user by their name, then provide the correct answers for the red wine path (yes, no, no, red)", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Mary
     const botReply1 = getBotReply("Mary");
@@ -186,7 +186,7 @@ describe("getBotReply", () => {
     expect(botReply5).toEqual(expectedReply5);
   });
   //   **Path for white wine**
-  it("should greet the user by their name, then provide the correct answers for the yes, no, no, white path", () => {
+  it("should greet the user by their name, then provide the correct answers for the white wine path (yes, no, no, white)", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Mary
     const botReply1 = getBotReply("Mary");
@@ -220,7 +220,7 @@ describe("getBotReply", () => {
     expect(botReply5).toEqual(expectedReply5);
   });
   //   **Path for coffee**
-  it("should greet the user by their name, then provide the correct answers for the no, yes, yes path", () => {
+  it("should greet the user by their name, then provide the correct answers for the coffee path (no, yes, yes)", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Anna
     const botReply1 = getBotReply("Anna");
@@ -248,7 +248,7 @@ describe("getBotReply", () => {
     expect(botReply4).toEqual(expectedReply4);
   });
   //   **Path for chamomile tea**
-  it("should greet the user by their name, then provide the correct answers for the no, yes, no path", () => {
+  it("should greet the user by their name, then provide the correct answers for the chamomile tea path (no, yes, no)", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Anna
     const botReply1 = getBotReply("Anna");
@@ -277,7 +277,7 @@ describe("getBotReply", () => {
     expect(botReply4).toEqual(expectedReply4);
   });
   //   **Path for water with cucumber**
-  it("should greet the user by their name, then provide the correct answers for the no, no, yes path", () => {
+  it("should greet the user by their name, then provide the correct answers for the water with cucumber path (no, no, yes)", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Anna
     const botReply1 = getBotReply("Anna");
@@ -305,7 +305,7 @@ describe("getBotReply", () => {
     expect(botReply4).toEqual(expectedReply4);
   });
   //   **Path for iced chocolate**
-  it("should greet the user by their name, then provide the correct answers for the no, no, no path", () => {
+  it("should greet the user by their name, then provide the correct answers for the hot chocolate path (no, no, no)", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Anna
     const botReply1 = getBotReply("Anna");
@@ -382,7 +382,7 @@ describe("getBotReply", () => {
     expect(containsSome(expectedReply2, botReply2)).toBeTruthy();
   });
   //   **Path for incoherent answer**
-  it("should provide instructions to reenter input if the bot doesn't understand", () => {
+  it("should provide instructions to reenter input if the chatbot doesn't understand", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Bob
     const botReply1 = getBotReply("Bob");
@@ -462,7 +462,8 @@ describe("getBotReply", () => {
     expect(botReply4).toEqual(expectedReply4);
   });
 
-  it("should provide the correct answers for the music or stop commands, and then continue with the previous path", () => {
+  //   **Path for music and stop commands**
+  it("should provide the correct answers for the music or stop commands, and then continue with the current path", () => {
     // * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     // * Input: Bob
     const botReply1 = getBotReply("Bob");
@@ -500,6 +501,7 @@ describe("getBotReply", () => {
     }
   });
 
+  //   **Path for typing random command at the beginning**
   it("should not call the user by the name 'random' if they enter this command at the start", () => {
     //   * Start: "Hey thirsty lips, I'm your drink genie, your wish is my command. What's your name?"
     //   * Input: "random"
