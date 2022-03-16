@@ -3,27 +3,38 @@
 ## Problem statement
 
 
-Create a chatbot that helps the customer decide which drink to order. Use the provided flowchart to build the chatbot.
+Create a chatbot that helps the customer decide which drink to order. Use the flowchart below to build the chatbot.
 
-The chatbot, or Drink Genie, will start by asking the user their name, which will enable the Drink enie to personalise the rest of the responses. The Drink Genie will ask the user about a specific preference related to drinking or their current feelings, and the user will answer one of two options. The user's answer will trigger the Drink Genie to ask another question, based on the previous answer. The user will continue to provide responses to each question until the chatbot eventually provides the customer with a drink that best suits them. 
+The chatbot, or Drink Genie, will start by asking the user their name, which will enable the Drink Genie to personalise the rest of the responses. The Drink Genie will ask the user about a specific preference related to drinking or their current feelings, and the user will answer one of two options. The user's answer will trigger the Drink Genie to ask another question, based on the previous answer. The user will continue to provide responses to each question until the chatbot eventually provides the customer with a drink that best suits them. 
 
 The Drink Genie will recognise if the user doesn't enter one of the required answers at each stage, letting them know that they need to try and enter their answer correctly again. 
 
-The chatbot will also respond to two instructions from the customer at any stage during the conversation. The first instruction will be to provide the customer with a random drink choice.  The second instruction will be to restart the chatbot to the start. 
+The chatbot will also respond to four instructions from the customer at any stage during the conversation. The first instruction will be to provide the customer with a random drink choice.  The second instruction will be to restart the chatbot to the start. The third instruction will be to play music. The fourth instruction will be to stop the music. 
 
 ## Inputs, processes and outputs
 
 
-* **Inputs:** ```msg```
+* **Inputs:** 
+  * ```msg``` which is a string.  
+  * The string could be anything that the user enters or could be one of the following commands:
+    * ```"restart"```
+    * ```"random"```
+    * ```"music"```
+    * ```"stop"```
 * **Processes:** 
-  * determine the correct answer based on the ```msg```, and previous inputs
-  * process an instruction to reset the chatbot to the start
-  * process an instruction to output a random answer
+  * determine the correct response based on the ```msg```, and previous inputs. Each path will lead to a final drink outcome and ask the user to restart the chatbot. 
+  * process the input ```"restart"``` to restart the chatbot to the start (at anytime during the conversation)
+  * process the input ```"random"``` to output a random drink option as a response (at anytime during the conversation)
+  * process the input ```"music"``` to play an audio file (at anytime during the conversation)
+  * process the input ```"stop"``` to stop the audio file (at anytime during the conversation)
+  
 * **Output:** 
-  * the next question, or answer to the question
+  * the response to the user's input and the chatbot's next question
   * restart the chatbot
   * a random drink option
   * an answer that tells the user to re-enter their ```msg``` correctly
+  * play an audio file
+  * stop an audio file
 
 --------------
 
