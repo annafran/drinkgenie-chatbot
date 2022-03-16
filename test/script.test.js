@@ -494,7 +494,7 @@ describe("getBotReply", () => {
     expect(botReply4).toEqual(expectedReply4);
     expect(botReply5).toEqual(expectedReply5);
 
-    const myAudio = document.getElementById("bar-music");
+    const myAudio = document.querySelector(".bar-music");
     if (myAudio) {
       expect(myAudio).not.toBeNull();
     }

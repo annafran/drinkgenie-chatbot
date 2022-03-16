@@ -62,7 +62,7 @@ const getBotReply = (msg) => {
   if (msgLowerCase === "music") {
     if (document) {
       const playMusic = () => {
-        const myAudio = document.getElementById("bar-music");
+        const myAudio = document.querySelector(".bar-music");
         myAudio?.play();
       };
       playMusic();
@@ -73,7 +73,7 @@ const getBotReply = (msg) => {
   if (msgLowerCase === "stop") {
     if (document) {
       const stopMusic = () => {
-        const myAudio = document.getElementById("bar-music");
+        const myAudio = document.querySelector(".bar-music");
         myAudio?.pause();
       };
       stopMusic();
