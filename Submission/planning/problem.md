@@ -15,26 +15,28 @@ The chatbot will also respond to four instructions from the customer at any stag
 
 
 * **Inputs:** 
-  * ```msg``` which is a string.  
+  * ```msg```, which is a string.  
   * The string could be anything that the user enters or could be one of the following commands:
     * ```"restart"```
     * ```"random"```
     * ```"music"```
     * ```"stop"```
+
 * **Processes:** 
   * determine the correct response based on the ```msg```, and previous inputs. Each path will lead to a final drink outcome and ask the user to restart the chatbot. 
   * process the input ```"restart"``` to restart the chatbot to the start (at anytime during the conversation)
   * process the input ```"random"``` to output a random drink option as a response (at anytime during the conversation)
   * process the input ```"music"``` to play an audio file (at anytime during the conversation)
   * process the input ```"stop"``` to stop the audio file (at anytime during the conversation)
-  
+
 * **Output:** 
-  * the response to the user's input and the chatbot's next question
-  * restart the chatbot
-  * a random drink option
-  * an answer that tells the user to re-enter their ```msg``` correctly
-  * play an audio file
-  * stop an audio file
+  * the response to the user's input and the chatbot's next question, following one of the paths
+  * an answer that tells the user to re-enter their ```msg``` correctly if it is incoherent
+  * Or the output could be one of the following if a special command is entered:
+    * restart the chatbot
+    * a random drink option
+    * play an audio file
+    * stop an audio file
 
 --------------
 
